@@ -1,0 +1,97 @@
+/*Site Back Button*/
+.mod-backbuttons{
+    background: #f8f8f8;
+    padding: 15px 20px;
+    text-align: left;
+    position: relative;
+
+    &.light{
+        background: #ffffff;
+    }
+    span{
+        font-family: 'semi_bold';
+        font-size: $fs-15;
+    }
+    i{
+        @extend .iconx30;
+    }
+}
+/*Site Back Button*/
+.history-btn{
+    > a{
+        display: inline-block;
+        font-family: 'font';
+    }
+    i ,span{
+        vertical-align: middle;
+    }
+    span{
+        padding-top: 2px;
+        padding-left: 3px;
+        &:empty{display: none;}
+    }
+    &.db{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 50%;
+        background: $white;
+        padding:14px 10px 16px 10px;
+        z-index: 40;
+        @include transition(all .2s ease);
+        span{
+            &.df{
+                display: none;
+            }
+            &.dsk{
+                display: inline-block;
+                font-family: 'semi_bold';
+                font-size: 15px;
+            }
+        }
+    }
+}
+/*Hİstory Back Button Transparent*/
+.history-btn-trans.db{
+    position: fixed;
+    top: 0;
+    background: none;
+    @include transition(all .2s ease);
+}
+/*Login Back Button*/
+.history-btn-login{
+    display: none;
+}
+
+/*Mobile Menu Back Button*/
+.mb-back-button{
+    background: #f8f8f6;
+    border-bottom: 2px solid #ececec;
+    position: relative;
+    padding: 22px 50px 18px 20px;
+    > i{
+        @extend .abs-cntr;
+        right: 20px;
+    }
+    .back-to-btn{
+        font-family:'semi_bold';
+        font-size: 15px;
+    }
+    .back-to-btn-head{
+        .abs-lft{
+            display: none;
+            left: 10px;
+        }
+    }
+}
+
+.hide-links{
+    .mb-back-button{
+        padding-left: 50px;
+        .back-to-btn-head{
+            .abs-lft{
+                display: block;
+            }
+        }
+    }
+}

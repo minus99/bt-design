@@ -1,0 +1,47 @@
+.social-share,
+.mini-search-sub,
+.kutuOzellikFiltre,
+.mini-lang-sub,
+.mini-menu-con,
+.plyc-popup{
+    opacity: 0;
+    @include transition(all .2s ease);
+    @include setTransform (perspective(1px) scale(1.1));
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+/*Alternate Perspective*/
+.social-share{
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+/*Animate Ready*/
+.menu-ready .mini-menu-con,
+.social-ready .social-share,
+.mini-search-ready .mini-search-sub,
+.ems-filter-ready .kutuOzellikFiltre,
+.mini-lang-ready .mini-lang-sub,
+.privacy-popup-ready .plyc-popup{
+    display: block;
+}
+/*Animate Success*/
+.menu-animate .mini-menu-con,
+.social-animate .social-share,
+.mini-search-animate .mini-search-sub,
+.ems-filter-animate .kutuOzellikFiltre,
+.mini-lang-animate .mini-lang-sub,
+.privacy-popup-animate .plyc-popup{
+    @include setTransform (perspective(1px) scale(1));
+    opacity: 1;
+}
+
+/*Vail Animation*/
+.menu-ready .menu-overlay,
+.mini-lang-ready .mini-lang-overlay{
+    display: block;
+}
+.menu-animate .menu-overlay,
+.mini-lang-animate .mini-lang-overlay{
+    opacity: .55;
+}

@@ -1,0 +1,199 @@
+.ems-page-projects{
+    padding-top: 35px;
+    padding-bottom: 0;
+    .row-1{
+        padding-bottom: 100px;
+    }
+    .msn-wrapper{
+        margin-top: 40px;
+    }
+    .btnDahaFazla{
+        margin-top:50px;
+    }
+}
+/*Kategori Slider*/
+.swiper-container-catg{
+    margin-top: 40px;
+}
+/*Marka Slider*/
+.swiper-container-brand{
+    margin-top: 5%;
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*list Grid*/
+.msn-projects{
+    padding: 0;
+    .slide{
+        margin-top: 0;
+    }
+}
+/*Detail Page*/
+.projects-gl{
+    margin-top: -90px;
+    margin-right: 5%;
+}
+.cover-dtl{
+    .cover{
+        height: 400px;
+    }
+}
+.ems-flex-db{
+    margin-left: 5%;
+    padding: 80px 50px;
+    @include flexDirection(row);
+    > div{
+        flex: 1;
+    }
+}
+.fe-tt {
+    padding-right: 10%;
+    h1{
+        font-family: 'bold';
+        font-size: 45px;
+        margin-top: $fs-10;
+    }
+    h2{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+.fe-ul{
+    @include grid;
+    -ms-grid-columns:50% 50%;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap: 30px;
+    margin-top: 0;
+    li{
+        
+        margin-bottom: 20px;
+    }
+}
+.fe-tml{
+    color:#a9a9a9;
+}
+.fe-tml,
+.fe-tdl{
+    font-size: $fs-14;
+}
+.swiper-container-trpl,
+.swiper-container-trpl .swiper-slide{
+    padding-left: 0;
+    padding-right: 0;
+}
+.swiper-container-trpl{
+    max-width: 1160px;
+    margin-top: 0;
+}
+.cover-dtl{
+    z-index: 1;
+}
+.cover-beetween{
+    margin-top: 9%;
+    .mb-bttm-wrp{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+/*Triple Banner*/
+.trpl-lyt{
+    @include grid;
+    grid-template-columns: minmax(0,495px) minmax(30px,140px) minmax(0,525px);
+    grid-template-areas:
+    "A . B"
+    "A . C";
+    grid-row-gap: 70px;
+    .swiper-slide{
+        width: auto;
+    }
+    .type-1 .cover {
+        height: 520px;
+    }
+    .type-2 .cover,
+    .type-3 .cover{
+        height: 350px;
+    }
+    .type-1{grid-area:A; padding-top: 35px;}
+    .type-2{grid-area:B; right: 40px;}
+    .type-3{grid-area:C;}
+}
+.cover-dtl{
+    max-height: 690px;
+    overflow: hidden;
+}
+.trpl-lyt-txt{
+    padding-top: 90px;
+}
+.pp-prd-sct{
+    position: absolute;
+    width: 50%;
+    max-width: 700px;
+    z-index: 1;
+    opacity: 1;
+    @include transition(all 500ms cubic-bezier(0.550, 0.085, 0.680, 0.530));
+    @include setTransform(translateX(700px));
+    perspective: 700px;
+    transform-origin: right;
+    .inner {
+        @include grid;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 20%);
+        height: calc(100% - 90px);
+        margin: 0 auto;
+    }
+    .close{
+        top: 85px;
+        right: 0;
+    }
+    .iconx{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        &:before{
+            font-size: 25px;
+        }
+    }
+    .detail{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 120px;
+    }
+}
+/*Tum Urunler*/
+.ems-prd-list-projects{
+    margin-top: 90px;
+    .ems-prd{
+        width: 25%;
+        &:hover{
+            .ems-prd-inner{margin-bottom: 0; }
+            .ems-prd-wrap{margin-top: 0;}
+        }
+    }
+}
+.ems-prd-list-title{ 
+    font-size: $fs-22;
+    text-align: center;
+    &-lft{
+        text-align: left;
+    }
+}
+
+/*Show More*/
+.icerikBlogListe_dahaFazla{
+    a.btnDahaFazla:hover{
+        @extend .no-bg-hvr;
+    }
+}
+
+/**Animation**/
+.animate-prj-bundle{
+    .pp-prd-sct{
+        @include setTransform(translateX(0));
+    }
+}

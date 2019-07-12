@@ -1,0 +1,44 @@
+.cover-list{
+    @extend .static;
+    .img{
+        overflow: hidden;
+    }
+    h1,h2{
+        position: absolute;
+        top: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        @include setTransform(translateY(-50%));
+    }
+    h1,h2,.ttl{
+        font-family: 'bold';
+        font-size: 35px;
+    }
+    .ttl{
+        font-size: 25px;
+    }
+    .sp{
+        img{
+            max-width: 28px;
+            vertical-align: middle;
+        }
+    }
+    .txt{
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+    .txt-list{
+        padding-top: 50px;
+    }
+}
+.cover-list-list{
+    h1,h2{
+        position: initial;
+        top: initial;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

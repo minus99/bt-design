@@ -1,0 +1,97 @@
+/* Home Page Main Slider */
+.homepage-slider{
+    .swiper-slide{
+        background:#f9f9f9;
+    }
+    .txt-cont{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        text-align: left;
+        color: #fff;
+        @include transition(opacity .2s ease-in);
+        padding-left: 20px;
+        padding-right: 20px;
+        @include setTransform(translateY(-50%));
+        img{width: auto; max-width: 34px;}
+        .g1{
+            font-family:'semi_bold';
+            font-size: $fs-18;
+        }
+        .g2{
+            font-family:'bold';
+            font-size: 40px;
+            line-height: 40px;
+            margin-top: 10px;
+            span{
+                margin-right: 15px;
+                vertical-align: bottom;
+                line-height: 40px;
+            }
+        }
+        p{
+            font-family: 'font';
+            font-size: $fs-14;
+            line-height: 22px;
+            margin-top: 20px;
+            max-height: 66px;
+            overflow: hidden;
+        }
+        .btnDefault {
+            margin-top:10px;
+        }
+    }
+
+    .btn-Main{
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        bottom: 90px;
+        z-index: 1;
+        text-align: left;
+        display: none;
+    }
+    .swiper-button-next{
+        margin-left:7.5px;
+    }
+    .swiper-button-prev{
+        margin-right:7.5px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: inline-block;
+        vertical-align: middle;
+        @extend .position-inherit;
+        i,i:before{
+            font-size: 30px;
+        }
+    }
+    .swiper-pagination{
+        text-align: left;
+        padding-left: 15px;
+        bottom: 40px;
+    }
+}
+.mouse-down{
+    @extend .absolute-center;
+    animation: mouseUpTo 1s infinite alternate;
+    top: inherit;
+    bottom: 40px;
+    width: 18px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    img{max-width: 15px;}
+    &:before{
+        content:'';
+        @extend .absolute-center;
+        animation: mouseUpToBefore 1s infinite alternate;
+        top: 8px;
+        width: 3px;
+        height: 6px;
+        border-radius: 8px;
+        background: #fff;
+    }
+}

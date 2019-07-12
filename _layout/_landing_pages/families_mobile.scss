@@ -1,0 +1,66 @@
+.ems-page-family{
+    .srt-desc{
+        line-height: 22px;
+        padding:40px 20px;
+    }
+    .cover-list{
+        .sp{
+            padding-top: 50px;
+            h2{
+                font-size: 25px;
+                position: inherit;
+                top: 0;
+                transform: none;
+            }
+            .anc,
+            h2{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .anc{padding-top: 5px;}
+        }
+    }
+}
+
+.icerikTemplateListeEtiket,
+.icerikListePagingUst{
+    display: none;
+}
+.icerikTemplateListeItem{
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.bx-ga{
+    .name{
+        font-size: $fs-16;
+        font-family:'semi_bold';
+        margin-top: 5px;
+    }
+    .img{
+        margin-bottom: $fs-15;
+    }
+    .list{
+        font-family:'font';
+        font-size: $fs-13;
+        > span{
+            padding-right: 10px;
+            @extend .db-bck;
+        }
+    }
+}
+.icerikBlogListe_dahaFazla{
+    text-align: center;
+    > table{
+        width: 100%;
+        display: table !important;
+    }
+}
+
+/*Kategori Sayfası*/
+.cat-page{
+    .box-sections .align-content{padding-top:50px;}
+}
+
+.rowPd {
+    padding-bottom: 100px;
+}

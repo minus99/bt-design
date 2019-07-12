@@ -1,0 +1,104 @@
+/*Header Menu Default*/
+.main-menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    .title{
+        .default{display: none;}
+        > a{
+            padding:8px 10px;
+            display: inline-block;
+            font-size: 16px;
+        }
+    }
+    ul.lvl-1{
+        height: 100%;
+        padding: 60px 10px 30px 10px;
+        > li{
+            > a{
+                font-family: 'semi_bold';
+                font-size: $fs-17;
+                padding: 10px;
+                display: inline-block;
+                min-width: 50%;
+            } 
+        }
+        li{
+            &.mb{
+                padding-bottom: 30px;
+                a{
+                    display: block;
+                    font-family: 'font';
+                    font-size: 16px;
+                    padding: 8px 10px;
+                }
+            }
+            &.mgLogin{
+                a{
+                    font-family: 'semi_bold';
+                    font-size: $fs-17;
+                }
+            }
+        }
+    }
+    ul.lvl-2{
+        > li{
+            img{
+                display: none;
+            }
+            &.typ-img{
+                >a{
+                    display: none;
+                }
+            }
+        }
+    }
+    ul.lvl-3{
+        > li{
+            > a{
+                display: none;
+            }
+        }
+    }
+    .ems-sub-menu{
+        > a{
+            &:after{
+                font-family:'icomoon';
+                content:'\e921';
+                @extend .iconx;
+                vertical-align: text-bottom;
+                float: right;
+                position: relative;
+                top: -3px;
+                font-size: 23px;
+            }
+        }
+        &.selected{
+            > a:after {
+                content:'\e920';
+            }
+        }
+    }
+    ul li{
+        &.ems-none{display: block !important;}
+    }
+    .mbLogoutBtn{
+        margin-top: 30px;
+    }
+}
+.sub-menu{
+    display: none;
+}
+.ems-sub-menu.selected .sub-menu{
+    display: block;
+}
+
+.hide-links{
+    .main-menu{
+        .hdn-lg{display: none;}
+    }
+    .mbSubMenu .sub-menu{display: block;}
+}

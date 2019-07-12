@@ -1,0 +1,24 @@
+/* Footer Social link */
+.site-footer-social {
+    padding: 45px 20px;
+    >a {
+        display: inline-block;
+        vertical-align: middle;
+        border: solid 1px $color6;
+        margin-left: 2%;
+        &:first-child{margin-left: 0;}
+    }
+
+    i,
+    i:before {
+        font-size: 40px;
+    }
+}
+
+.site-footer-target{
+    > a{
+        display: inline-block;
+        vertical-align: middle;
+        &:first-child{margin-right: 7px;}
+    }
+}

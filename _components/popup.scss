@@ -1,0 +1,234 @@
+/*EMOS CONFIRM*/
+.emos-confirm {
+    max-width: calc(100% - 20px);
+}
+
+/*JQUERY CONFIRM*/
+.jconfirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.jconfirm-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
+.jconfirm-box-container {
+    width: calc(100% - 20px);
+    max-width: 650px !important;
+    margin-left: auto;
+    margin-right: auto;    
+    transition: transform;
+}
+.jconfirm-box {
+    position: relative;
+    background: #fff;
+    outline: none;
+}
+.jconfirm-closeIcon{
+    .btnMinPpCl {
+        display: none;
+    }
+}
+.jconfirm-closeIcon,
+.btnMinPpCl{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url(/images/frontend/close.svg) center center no-repeat #f4f4f4;
+    border-radius: 100%;
+    z-index: 1;
+}
+.jconfirm-content-pane {
+    transition-property: height;
+    height: auto !important;
+}
+.jconfirm-content {
+    width: 100%;
+    height: 100%;
+    min-height: 400px !important;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+.jconfirm-title-c {
+    display: none;
+}
+
+/*CUSTOM POPUP*/
+.popupTitleDefault {
+    position: sticky;
+    top: 0;
+    background: $color3;
+    padding: 18px 60px 19px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    min-height: 60px;
+}
+div[class$="icerik"] {
+    > span {
+        text-align: left;
+        padding: 20px;
+    }
+}
+div[class$="Yazdir"] {
+    display: none;
+}
+
+/*XML Form*/
+.xmlFormAciklama{display: none;}
+.xmlFormHeader{
+    @extend .f-sBold;
+    font-size: $fs-15;
+    padding:22px 40px 21px 20px;
+    background: #f4f4f4;
+    margin-bottom: $fs-10;
+}
+.xmlFormContent{
+    @extend .pd-full-20;
+}
+.btnXMLFORM{
+    margin-top: $fs-20;
+}
+#tblXmlFormButton{
+    display: table !important;
+    width: 100%;
+    text-align: left;
+}
+label[for$="chkPRM_CHECK"]{
+    display: none;
+}
+.xmlForm div[id$="CaptchaImage_divCaptcha"]{
+    @extend .ems-flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.xmlForm_btnGonder{
+    @extend .pd-20;
+    padding-bottom: 20px;
+}
+.xmlForm #imgCaptcha{margin-top: 20px;}
+
+/*Product Request Form*/
+
+.ems-custom-form,
+.ems-price-quate{
+    .jconfirm-box-container{width: 100% !important;}
+    .jconfirm-box{margin-top: 0 !important;}
+    .jconfirm-content-pane{height: 100vh!important;} 
+}
+.request-from{
+    textarea{
+        width: 100%;
+        height: 80px;
+    }
+    .chk-padding{
+        .font-3{font-size: $fs-15;}
+    }
+}
+.request-form-header{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.request-form-prd{
+    .img{
+        margin-right: 25px;
+        width: 100px;
+    }
+    p{
+        @extend .mt-10;
+    }
+    .text{
+        width: calc(100% - 120px);
+        font-size: $fs-13;
+    }
+    .mb-fnt {
+        font-size: $fs-14;
+        margin-top: 30px;
+    }
+}
+.request-form-body{
+    margin-top: 20px;
+}
+/*Favori Popup*/
+.fav-group-popup {
+    .minPpIframe{
+        padding: 20px !important;
+        overflow-y: auto;
+    }
+    .jconfirm-box{
+        margin-top: 0 !important;
+    }
+    .jconfirm-box-container{
+        width: 100% !important;
+    }
+    .jconfirm-content{
+        min-height: 100vh !important;
+    }
+}
+/*Gizlilik Politikasi Popup*/
+.plyc-popup{
+    display: none;
+    @extend .fixed-centered;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 50;
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #ededed;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #787878;
+    }
+    .wrp{
+        overflow-y: auto;
+        height: 100%;
+    }
+    .inner{
+        padding:30px 20px;
+    }
+    .bld{
+        font-family:'semi_bold';
+        font-size: 22px;
+        @extend .mb-10;
+    }
+    .reg{
+        color: #a2a2a2;
+    }
+    .body{
+        @extend .mt-40;
+    }
+    ul li, p{
+        line-height: 24px;
+    }
+}
+.prvcy-pp-cls{
+    @extend .iconx39;
+    @extend .abs-lft;
+    @extend .radius-full;
+    top: 15px;
+    left: inherit;
+    right: 15px;
+    background: #f4f4f4;
+}
+
+/**/
+.social-overlay,
+.form-overlay{z-index: 40;}

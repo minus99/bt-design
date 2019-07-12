@@ -1,0 +1,243 @@
+.ems-page-projects {
+    padding-bottom: 100px;
+    .icerikTemplateListeContainer{
+        display: none;
+    }
+    .site-scroll-list{
+        margin-top: 100px;
+        margin-bottom: 90px;
+    }
+    .msn-wrapper {
+        .font-3 > span{
+            padding-right: 10px;
+            @extend .iBlock;
+        }
+    }
+}
+/*Kategori Slider*/
+.swiper-container-catg{
+    margin-top: 30px;
+    .swiper-wrapper{
+        li{
+            width: auto;
+        }
+    }
+    .blck{
+        padding: 10px;
+    }
+}
+/*Marka Slider*/
+.swiper-container-brand{
+    background: #f9f9f9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*list Grid*/
+.msn-projects{
+    padding: 20px;
+    .slide{
+        margin-top: 50px;
+        &:first-child{margin-top: 0;}
+    }
+}
+
+/*Detail Page*/
+.projects-gl{
+    background: #fff;
+    z-index: 2;
+    margin-top: -35px;
+    margin-right: 20px;
+}
+.cover-dtl{
+    .cover{
+        height: 340px;
+    }
+}
+.cover-bt-inr{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    object-fit: cover;
+    background-position: center center !important;
+    overflow: hidden;
+}
+.ems-flex-db{
+    @include flexDirection(column);
+    padding: 50px 20px 20px;
+    align-items: flex-start;
+}
+.fe-tt {
+    h1{
+        font-family: 'semi_bold';
+        font-size: 26px;
+    }
+    h2{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+.fe-tml,
+.fe-tdl{
+     font-size: $fs-15;
+}
+.fe-tdl{
+    @extend .mt-5;
+    line-height: 22px;
+}
+.fe-ul{
+    margin-top: 40px;
+    li{
+        margin-bottom: 10px;
+    }
+}
+.plus-op{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    padding: 4px;
+    margin-top: -17px;
+    i{
+        background: #fff;
+    }
+}
+.swiper-container-trpl,
+.swiper-container-trpl .swiper-slide{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.swiper-container-trpl{
+    margin-top: 50px;
+    overflow: visible;
+}
+.cover-beetween{
+    margin-top: 70px;
+    .mb-bttm-wrp{
+        width: calc(100% - 10%);
+        left: 5%;
+        right: 5%;
+        bottom: 70px;
+    }
+    .swiper-pagination{
+        position: relative;
+        bottom: 0 !important;
+        left: 0;
+        padding-left: 0 !important;
+    }
+}
+.trpl-lyt{
+    .swiper-slide{
+        width: 305px;
+    }
+    .cover {
+        height: 300px;
+    }
+}
+.trpl-lyt-txt {
+    padding-top: 60px;
+    span{
+        font-size: 18px;
+        line-height:26px;
+    }
+    p{margin-top: 25px;}
+}
+.trpl-lyt-txt-mb{
+    padding-left: 20px;
+    padding-right: 20px;
+    span{
+        font-size: $fs-17;
+        @extend .f-sBold;
+    }
+}
+.pp-prd-sct{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 45;
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    opacity: 0;
+    @include transition(all .2s ease);
+    backface-visibility: visible;
+    perspective: 1px;
+
+    transform-origin: center;
+    .close{
+        @extend .abs-lft;
+        top: 25px;
+        left: inherit;
+        right: 20px;
+    }
+    .iconx{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        &:before{
+            font-size: 35px;
+        }
+    }
+    .inner{
+        padding:30px 20px;
+    }
+    .prd {
+        max-width: 300px;
+        &:after{
+            @extend .after-img;
+        }
+    }
+    .hdn-ct >a{
+        font-family: 'semi_bold';
+    }
+    .link > a{
+        @extend .mt-20;
+    }
+}
+.ct-lst{
+    > span{
+        &:before{
+            content:',';
+            padding-right: 2px;
+        }
+        &:first-child:before{display: none;}
+    }
+}
+
+/*Tum Urunler*/
+.ems-prd-list-projects{
+    margin-top: 70px;
+}
+.ems-prd-list-title{
+    font-size: $fs-18;
+    &-lft{
+        font-size: $fs-22;
+    }
+}
+
+/*Animation*/
+.ready-prj-bundle{
+    .pp-prd-sct{
+        display: block;
+    }
+}
+.animate-prj-bundle{
+    @extend .bdy-fix;
+    .pp-prd-sct{
+        opacity: 1;
+        @include setTransform (scale(1));
+    }
+}
+.animate-prj-bundle,
+.mod-popup-animate{
+    .plus-op{
+        i{
+            background: $black;
+            &:before{
+                content:'\e920';
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.kutuBulten{
+    max-width: 340px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.mini-bulletin-info{
+    border-top:none;
+    padding-top: 0;
+    > span{
+        font-size: 13px;
+    }
+}

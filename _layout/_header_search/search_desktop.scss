@@ -1,0 +1,56 @@
+/* Header mini search */
+.mini-search{
+    .ems-form-inner{
+        padding-top: 5%;
+    }
+    a.btnArama{
+        left: 0;
+        right: inherit;
+    }
+    .site-grid{
+        @include grid;
+        align-items: flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: relative;
+        height: 100%;
+    }
+    span[id$="lbfkutuArama2"]{
+        display: inline-block;
+        top: 50px;
+    }
+    input[type="text"]{
+        padding-left: 50px;
+    }
+}
+.mini-search-info{
+    display: inherit;
+}
+.mini-search-sub{
+    top: 85px;
+    height: calc(100% - 85px);
+}
+/*Home Page Special*/
+.page-home-grid{
+    .icon-search:before{color: $white;}
+}
+
+/*Suggest*/
+.searchSuggestDiv{
+    position:relative !important;
+    top: 0 !important;
+    height: auto;
+    overflow-y: inherit;
+    .prd {
+        .sHolder{
+            max-width: 1240px;
+            text-align: center;
+        }
+    }
+}
+.suggest_link,
+.suggest_link_over{
+    width: 25%;
+}
+
+.mini-search-ready{overflow: hidden;}

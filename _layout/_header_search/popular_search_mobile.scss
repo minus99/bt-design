@@ -1,0 +1,15 @@
+.search-populer{
+    padding: 20px;
+}
+.search-populer-title{
+    font-family: 'font';
+    font-size: $fs-14;
+}
+.populer-words-list{
+    @include flex;  
+    flex-wrap: wrap;
+    text-align: center; 
+    li{
+        width: 50%;
+    }
+}

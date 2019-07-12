@@ -1,0 +1,140 @@
+.ems-prdd-grid{
+    @include grid;
+    grid-template-columns:minmax(0, 5%) minmax(0, 50%) minmax(0,50%) minmax(0, 5%);
+    grid-template-areas:
+    ". A C C"
+    ". A C C"
+    ". A B B"
+    ". A D D"
+    ". A E E";
+}
+.urunDetay {
+    .ga1{
+        grid-area: A;
+        border-right: 1px solid #efefef;
+        padding-top:250px;
+        padding-bottom:250px;
+        padding-right: 20px;
+        .sticky{
+            top: 250px;
+            max-width: 470px;
+        }
+    }
+    .ga3{grid-area: B;}
+    .ga4{grid-area: C;}
+    .ga5{grid-area: D;}
+    .ga6{grid-area: E;}
+    .ga4,
+    .ga5{
+        background:rgba(200, 200, 200, 0.1);
+    }
+    .ga5{
+        margin-top: 50px;
+    }
+}
+
+/*Zoom Image*/
+span[id$="lbfImgZoomScript"]{
+    max-width: 720px;
+}
+
+/*Gallery*/
+.ems-prdd-gallery{
+    .slide-wrp{
+        @include grid;
+        grid-auto-columns: 1fr;
+    }
+    .swiper-slide{
+        background:none;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+/*Product Card*/
+.ems-page-product-detail .emos_H1{
+    font-size: 45px;
+}
+.ems-prdd-sortname{
+    font-size: 30px;
+}
+.ems-prdd-block1{
+    flex-wrap: wrap;
+}
+.ems-prdd-block2{
+    margin-top: 20px;
+}
+.ems-prdd-info,
+.ems-prdd-srts{
+    max-width: 590px;
+}
+.ems-prdd-info,
+.ems-tab-detail{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ems-prdd-info{
+    padding-top: 100px;
+    &:empty{display: none;}
+    h1{
+        width: 85%;
+        font-family:'font';
+        font-size: $fs-18;
+    }
+    p{
+        font-size: $fs-14;
+    }
+}
+.photo-viewer,
+.ems-tab-detail{
+    max-width: 640px;
+}
+
+/*Documents*/
+.urunDetay_urunDokuman {
+    widows: 50%;
+    > a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+/*Projects*/
+.detail-projects{
+    max-width: 1070px;
+    padding-bottom: 80px;
+}
+.swiper-slide-project{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Social Share*/
+.social-share{
+    max-width: 510px;
+}
+
+/*projects Slider*/
+.swiper-container-projects {
+    padding-left: 0;
+    padding-right: 0;
+    .swiper-title .ttl{
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+    .swiper-slide{
+        width: auto;
+    }
+}
+
+
+/*Animation Name*/
+.ems-page-product-detail .gr1{z-index: 2; position: relative;}
+.ems-page-product-detail .gr2{z-index: 1;}
+
+.fxd-name-wrp *{color:#FFFFFF;}
+.fxd-name-wrp{position: absolute;width: 100%;height: 100%;clip: rect(0, auto, auto, 0);pointer-events: none;}
+.fxd-name-wrp .fxd-name,
+.fxd-name.fake-1{position: fixed;top: 50%;margin-top: -40px;z-index: 5;left:5%;}
+.fxd-name{max-width: 470px;}
+.fake-2{opacity:0;}

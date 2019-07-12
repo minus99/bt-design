@@ -1,0 +1,94 @@
+/*Grid List*/
+.ems-grid-header{
+    display: none;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    > div{
+        font-family:'semi_bold';
+    }
+}
+.ems-grid{
+    span.name{
+        @extend .blck;
+        font-family:semi_bold;
+        font-size: 16px;
+        @extend .mb-10;
+    }
+}
+.ems-grid-files{
+    .ems-grid-2-1{
+        @extend .db-bck;
+        &:first-child{
+            width: 55%;
+        }
+        &:last-child{
+            width: 45%;
+            text-align: right;
+        }
+    }
+}
+.ems-grid-tr{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.ems-favorite-download{
+    margin-right: 20px;
+}
+/*Proje List*/
+.ems-grid-fv-grp{
+    .row-div{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #f4f4f4;
+        @extend .static;
+        &:nth-child(2){
+            border-top: 1px solid #f4f4f4;
+        }
+    }
+    .ems-message{
+        @extend .mt-20;
+        margin-bottom: 0;
+    }
+}
+.ems-grid-icon{
+    display: none;
+}
+.ems-new-fv-grp{
+    text-align: right;
+    margin-bottom: 20px;
+    > a{
+        @extend .btnDefault;
+    }
+}
+.ems-fvg-name{
+    font-family:'semi_bold';
+    font-size: 18px;
+}
+.ems-fvg-links{
+    margin-top: 15px;
+}
+.FavoriGrupGuncelle,
+.PriceQuate{
+    @extend .db-bck;
+    text-align: center;
+    > a{
+        max-width: inherit;
+    }
+}
+.FavoriGrupGuncelle{
+    width: 33.333%;
+    padding-right: 5px;
+    > a{
+        @extend .btnDefault;
+    }
+}
+.PriceQuate{
+    width: 66.666%;
+    padding-left:10px;
+}
+.FavoriGrupSil {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}

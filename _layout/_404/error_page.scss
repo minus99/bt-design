@@ -1,0 +1,59 @@
+.ems-page-error,
+.ems-error,
+span[id$="lbfFileNotFound1"]{
+    width: 100%;
+}
+.ems-page-error{
+    padding-bottom: 50px;
+    padding-top: 200px;
+}
+.ems-error {
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+span[id$="lbfFileNotFound1"],
+span[id$="lbfFileNotFoundDefault"],
+span[id$="lbfNoAccess1"]{
+    display: table-cell;
+    vertical-align: middle;
+}
+.img-404{
+    .btnDefault{
+        margin-top: 40px;
+        max-width: 225px;
+        height: 55px;
+        line-height: 47px;
+        span{
+            font-size: 15px;
+        }
+    }
+}
+.img-404-wrp{
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+    @extend .pd-20;
+    text-align: center;
+}
+.img-404-txt{
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    width: 100%;
+    h1{
+        font-size: 65px;
+    }
+}
+.search-none{
+    padding: 100px 20px;
+    text-align: center;
+    background: #f8f8f6;
+    p {
+        font-size: 15px;
+    }
+    h1{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

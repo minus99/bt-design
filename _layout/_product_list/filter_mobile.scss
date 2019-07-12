@@ -1,0 +1,131 @@
+.kutuOzellikFiltre,
+.urunKiyaslamaOzellik_tumunuTemizle,
+.urunKiyaslamaOzellik_temizle,
+.pnlUrunKiyasSecim{
+    display: none;
+}
+.kutuOzellikFiltre{
+    background: $color1;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+.urunKiyaslamaOzellik_ozellikAd{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    font-family:'semi_bold';
+    font-size: 15px;
+    border-top:1px solid #e6e6e6;
+    position: relative;
+    &:after{
+        font-family:'icomoon';
+        content:'\e905';
+        @extend .iconx30;
+        @extend .abs-cntr;
+        right: 0;
+        font-size: 30px;
+    }
+    &.kapali{
+        &:after{
+            content:'\e904';
+        }
+    }
+}
+a.urunKiyaslamaOzellik{
+    @extend .blck;
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 6px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    &:before{
+        content:'';
+        width: 11px;
+        height: 11px;
+        @extend .abs-cntr;
+        left: 0;
+        background:url(/images/frontend/chck.png) center center no-repeat;
+    }
+    &.link_selected:before{
+        background:url(/images/frontend/chck_active.png) center center no-repeat;
+    }
+}
+.kutuBodyOzellikFiltre{
+    height: calc(100% - 210px);
+    overflow-y: auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    > table{
+        width: 100%;
+        height: 100%;
+        > tbody > tr{
+            display: block;
+            > td{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+.urunKiyaslamaOzellik_ozellik {
+    width: 100%;
+}
+.urunKiyaslamaOzellik_ozellikIcerik{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    > table{
+        width: 100%;
+        > tbody{
+            > tr, > tr > td {
+                display: block;
+            }
+        }
+    }
+}
+.kutuFooterOzellikFiltre {
+    margin-left: 20px;
+    margin-right: 20px;
+    @extend .flx-between;
+    justify-content: flex-end;
+    height: 150px;
+    border-top:1px solid #e6e6e6;
+    a.btnDefault,
+    .urunKiyaslamaOzellik_tumunuTemizle {
+        min-width: 49%;
+    }
+    .urunKiyaslamaOzellik_tumunuTemizle{
+        display: block !important;
+        > a{
+            @extend .btnDefault;
+            @extend .btnLink;
+        }
+    }
+    a.btnFilterClear{
+        display: none;
+    }
+}
+a.obj-filter{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a.btn-filter-popup-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 24px;
+}
+.ems-sort{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ems-filter-animate{
+    @extend .bdy-fix;
+}

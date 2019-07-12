@@ -1,0 +1,77 @@
+/**/
+.ems-page-contact{
+    .cover-list{display: none;}
+    .mt-minus{
+        width: 100%;
+        margin-top:0;
+        .xml-title{display: none;}
+    }
+    .mobi-dropdown-header{
+        margin-bottom: 0;
+    }
+    .xml-desc.mt-20{
+        margin-top: 0;
+        font-size: 18px;
+        p{
+            line-height: 28px;
+        }
+    }
+    .row-2{
+        background-color:#f8f8f6;
+        margin-top: 50px;
+    }
+    .ems-form .chk-padding span:nth-child(2){
+        vertical-align: baseline;
+    }
+}
+
+/*List*/
+.contact-us-list{
+    ul li {
+        margin-top: 30px;
+        border-top: 1px solid #dddddd;
+        padding-top: 30px;
+        p, span{
+            line-height: 22px;
+        }
+        p{
+            font-family: 'semi_bold';
+            font-size: 18px;
+        }
+        > span{
+            @extend .blck;
+            margin-top: 10px;
+        }
+    }
+}
+/*Form Title*/
+.contact-desc{
+    h2{
+        font-family: 'semi_bold';
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}
+/*Form*/
+.contact-from{
+    textarea{
+        height: 80px;
+    }
+}
+.ems-field-title{
+    span{
+        @extend .blck;
+        font-family: 'semi_bold';
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #d8d8d8;
+    }
+}
+.ems-form-detail{display: none;}
+.ems-form-detail.show{display: block;}

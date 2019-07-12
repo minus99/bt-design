@@ -1,0 +1,99 @@
+/*Header mini Login*/
+.mini-user {
+    .ems-flex-between{
+        justify-content: flex-start;
+    }
+    .titlex30{
+        margin-bottom: 20px;
+        @include block;
+    }
+    .ems-message {
+        text-align: center;
+    }
+    .mini-user-info{
+        display: none;
+    }
+}
+.mini-user-logoff{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 480px;
+    height: 100%;
+    z-index: 50;
+    background: #f8f8f6;
+}
+.user-ems-form{
+    max-width: 350px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    .ems-form-obj{
+        input{
+            background: none;
+        }
+    }
+    .btnKutuLogin,
+    #lnkSifremiUnuttum{
+        margin-top: 35px;
+    }
+    .btnKutuLogin{
+        max-width: 145px;
+        width: 100%;
+        margin-right: 35px;
+    }
+    #lnkSifremiUnuttum{
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: underline;
+    }
+    a.lnkDefault{
+        margin-top: 50px;
+        text-decoration: underline;
+    }
+}
+.kutuUyeGiris_profilFoto{
+    display: block !important;
+}
+label[id$="lbfKUTU_UYEBENIHATIRLA_FL"]{
+    padding-top: 5px;
+}
+span[id$="lbhKUTU_HESABIM"]{
+    display: block;
+}
+
+/*Login olduktan sonraki acilir menu*/
+.mini-user-sub,
+.mini-user-logon{display: none;}
+
+.ems-login .mini-user {position: relative;}
+
+.mini-user-logon{
+    position: fixed;
+    top: 85px;
+    right: 5%;
+    width: 310px;
+    background: $color8;
+    padding: 30px;
+    z-index: 20;
+    .ga1{
+        width: 80px;
+        height: 80px;
+        background: #ddd;
+        margin-right:20px;
+    }
+    .ga2{
+        padding-top: 15px;
+    }
+}
+.mini-user-links{
+    margin-top: 20px;
+    .item{
+        a{
+            display: inline-block;
+            line-height: 28px;
+            font-size: 13px;
+        }
+    }
+}

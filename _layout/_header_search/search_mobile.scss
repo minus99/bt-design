@@ -1,0 +1,123 @@
+/* Header mini search */
+.mini-search-sub,
+.ems-obj-required{display: none;}
+
+.mini-search{   
+    .search-input,
+    .ems-form-inner{
+        position: relative;    
+    }
+    .icon-close{
+        font-size: 25px;
+    }
+    .sub-close{
+        @extend .iconx-after;
+    }
+    a.btnArama{
+        border: none;
+        padding: 0;
+        height: auto;
+        line-height: normal;
+        position: absolute;
+        top: 23px;
+        right: 20px;   
+        margin-top: -12px;
+        width: auto;
+    }
+    span[id$="lbfkutuArama2"]{
+        @extend .iconx-after;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    span[id$="lbfbtnArama"]{
+        display: inline-block;
+    }
+    input[type="text"]{
+        border-width: 0 0 1px 0;
+        border-color: #000;
+        padding-left: 20px;
+        padding-right: 50px;
+        color: #cdcdcd;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}
+.mini-search-info{
+    display: none;
+}
+.mini-search-sub{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    z-index: 50;
+    .icon-search:before{color: $black !important;}
+}
+
+/*Suggest*/
+.searchSuggestDiv{
+    position: absolute !important;
+    top: 50px !important;
+    z-index: 1 !important;
+    width: 100%;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    h3,
+    .cat{display: none;}
+    .prd {
+        .sHolder{
+            display: table;
+            width: 100%;
+            @extend .m-left;
+            @extend .m-right;
+            padding-top: 20px;
+            @extend .pd-20;
+            padding-bottom: 20px;
+        }
+    }
+}
+.suggest_link,
+.suggest_link_over{
+    @extend .db-bck;
+    width: 50%;
+    padding: 5px;
+    cursor: pointer;
+    table{
+        width: 100%;
+        tbody{
+            > tr{
+                @extend .blck;
+                > th{
+                    @extend .blck;
+                }
+                > td{
+                    display: none;
+                    text-align: left;
+                    &.suggest_urnsname_con{
+                        @extend .blck;
+                        @extend .mt-5;
+                        font-family:'semi_bold';
+                        font-size: $fs-13;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Body Ready*/
+.mini-search-ready{
+    @extend .bdy-fix;
+}
+/*Body Animation*/
+.mini-search-animate{
+    .history-btn-trans.db,
+    .history-btn.db{opacity: 0;}
+}
+.mini-search-keyup{
+    .search-populer{display: none;}
+    .mini-search input{color: $black;}
+}

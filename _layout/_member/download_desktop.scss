@@ -1,0 +1,21 @@
+.ems-page-downloads{
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.ems-docs-search{
+    margin-bottom: 50px;
+}
+
+/*Download List*/
+.ddr-prd-item{
+    justify-content: center;
+    .uk-accordion-title{
+        width: 300px;
+    }
+    .uk-accordion-content{
+        width: calc(100% - 50%);
+        padding-left: 50px;
+        margin-top: 0;
+    }
+}

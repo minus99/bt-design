@@ -1,0 +1,113 @@
+/* Masonry Type Grid */
+
+.swiper-grid-title{
+    padding: 50px 10px 25px 10px;
+    .font-2{
+        margin-top: 20px;
+        line-height: 25px;
+    }
+}
+
+.swiper-grid{
+    padding-left: 10px;
+    padding-right: 10px;
+    .swiper-slide{
+        width: 95%;
+        > a{
+            @extend .blck;
+            padding: 10px;
+        }
+    }
+}
+.msn-wrapper{
+    .swiper-slide,
+    .slide {
+        > a{
+            @extend .blck;
+        }
+    }
+    .text{
+        > span{
+            @extend .blck;
+        }
+    }
+    .vertical,
+    .horizontal{
+        padding-top: 10px;
+    }
+    .font-4,
+    .font-5{
+        margin-top: 5px;
+    }
+}
+
+/*Double Column Grid*/
+.swiper-db-clmn{
+    a.block {
+        height: 100%;
+    }
+    .link-btn{
+        position: absolute;
+        bottom:30px;
+        left:20px;
+        z-index: 1;
+        &.light{
+            *{
+                color: $white;
+            }
+        }
+    }
+    .dbl-el{
+        span{
+            margin-right: 5px;
+        }
+        img{width: auto;}
+    }
+    .bttm{
+        margin-top: 10px;
+    }
+    .icon-arrow-right{
+        &:before{
+            font-size: 20px;
+        }
+    }
+}
+
+/*Product Families Widget*/
+.swiper-fmly-prd{
+    padding-left: 5px;
+    padding-right: 5px;
+    .swiper-title {
+        margin-top: 60px;
+    }
+    .font-1{font-size: 18px;}
+    .swiper-slide{
+        width: 50%;
+    }
+}
+
+/*Ana Sayfa 3 Grid*/
+.swiper-db-vertical{
+    .wrp{
+        p{
+            max-width: 100%;
+            text-overflow: ellipsis;
+            min-height: 66px;
+            max-height: 66px;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+        }
+    }
+}
+
+/* Projects Brand Slider*/
+.swiper-container{
+    .d-wrap{
+        li{
+            width: auto;
+            text-align: center;
+        }
+    }
+}

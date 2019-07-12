@@ -1,0 +1,35 @@
+/* Footer Menu Desktop */
+.site-footer{
+    &-menu{
+        > ul{
+            display: table;
+            width: 100%;
+            > li{
+                display: table-cell;
+                vertical-align: top;
+                min-width: 50%;
+                a{
+                    display: block;
+                    line-height: 22px;
+                    font-size: 13px;
+                    font-family: 'font';
+                    &.bold{
+                        font-family: 'semi_bold';
+                    }
+                    &.btm{margin-top: 10px;}
+                    span{
+                        position: relative;
+                        &:before{
+                            @extend .scaleX;
+                        }
+                    }
+                    span:hover{
+                        &:before{
+                            @extend .scaleXHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

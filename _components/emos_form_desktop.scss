@@ -1,0 +1,26 @@
+.ems-form-flex{
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .ems-field{
+        width: 50%;
+        max-width: 350px;
+    }
+    .ems-field-full{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.ems-field{
+    &.span1{
+        grid-column: span 2;
+    }
+    &.span2{
+        grid-column: span 2;
+    }
+    .clmn-2{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+}

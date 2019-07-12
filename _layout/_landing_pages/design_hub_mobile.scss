@@ -1,0 +1,104 @@
+.ems-page-designhub{
+    .urunPaging {display: none;}
+}
+.sticky-dsgn{
+    top: 60px;
+    background: $white;
+    z-index: 2;
+}
+/*Cover*/
+.cover-bt-txt{
+    @extend .abs-cntr;
+    h1{font-size: $fs-14;}
+    h2{
+        margin-top: 10px;
+        font-size: 35px;
+    }
+}
+.dhub-production-txt *{
+    line-height: 22px;
+}
+.dhub-textture{
+    h4, > p{
+        font-size: $fs-15;
+    }
+    h4 {
+        line-height: 22px;
+        p{
+            font-size: $fs-17;
+        }
+    }
+}
+.dhub-ttl{
+    font-size: 26px;
+    font-family:'semi_bold';
+    margin-bottom: 20px;
+}
+/*Slider*/
+.cover-linear{
+    &:after{
+        @extend .mb-bttm-wrp;
+        background: rgba(168, 168, 168, .2);
+        height: 60%;
+        z-index: inherit;
+    }
+}
+.swiper-container-links{
+    margin-top: 30px;
+    .swiper-slide{
+        width: auto;
+        a{
+            padding: 10px;
+        }
+    }
+}
+.swiper-container-hub{
+    .cover{
+        @extend .cover-bt-inr;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        background: none;
+        border-radius: 0;
+        width: auto;
+        height: auto;
+        position: inherit;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+}
+/*Mobile Slider*/
+.swiper-container-vd{
+    .swiper-slide{
+        margin-right: 10px;
+        width: 95%;
+    }
+}
+
+.designers{
+    &-lft{
+        span{
+            font-family:'semi_bold';
+            font-size: 26px;
+        }
+    }
+    &-ul{
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        li{
+            @extend .iBlock;
+            vertical-align: top;
+            padding: 5px;
+            width: 50%;
+            margin-bottom: 40px;
+            img{
+                max-width: 270px;
+            }
+        }
+    }
+}

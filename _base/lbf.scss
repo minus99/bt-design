@@ -1,0 +1,21 @@
+/* TR-TR */
+.anaBody.tr-TR{
+    .en-el{display: none;}
+
+    .urunliste_sonrakikategori{
+        &:before{
+            content:'Sonraki';
+        }
+    }
+}
+
+/* EN-US */
+.anaBody.en-US{
+    .tr-el{display: none;}
+
+    .urunliste_sonrakikategori{
+        &:before{
+            content:'Next';
+        }
+    }
+}

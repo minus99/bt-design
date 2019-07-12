@@ -1,0 +1,61 @@
+/* Footer Grid Layout */
+.site-footer{
+    .gf1, .row2 .gb2{
+        display: none;
+    }
+    .row2{
+        .gb3{
+            background: #f7f7f7;
+        }
+    }
+}
+.mb-copyright {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:23px 20px;
+    p, p *{
+        font-size: 10px;
+    }
+    span{
+        margin-right: 15px;
+    }
+    a.policy-btn, span{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.site-scroll-top{
+    text-align: center;
+    a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: $black;
+        text-align: center;
+        border-radius: 100%;
+        i{
+            line-height: 40px;
+            &:before{
+                font-size:30px;
+                color: $white;
+            }
+        }
+    }
+}
+a.policy-btn{
+    position: relative;
+    padding-left: 10px;
+    &:before{
+        content:'';
+        width: 1px;
+        height: 14px;
+        background: #acacac;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -7px;
+    }
+}

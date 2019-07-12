@@ -1,0 +1,51 @@
+/*Kariyer Form*/
+.cover-list-sttc{
+    .txt{
+        top: 120px;
+        transform: none;
+    }
+    .history-btn{
+        *{color: #fff;}
+    }
+}
+.ems-page-career{
+    .rowPd{
+        padding-bottom: 60px;
+    }
+    .row-2{
+        background: url(/upload/banners/login/login-cover.png) bottom right no-repeat #f8f8f6;
+        padding-top: 80px;
+        margin-top: 70px;
+    }
+    .xmlForm{
+        max-width: 730px;
+    }
+    .grid-form{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+    .request-from .span1{
+        grid-column: span 2;
+    }
+}
+.xml-title{
+    font-size: 32px;
+}
+.mt-minus{
+    width: auto;
+    margin-top: 0;
+}
+.xml-form-desc{
+    padding-top: 60px;  
+    .ems-flex-between{
+        align-items: flex-start;
+    }
+    .double-el{
+        &:first-child{
+            padding-right: 20px;
+        }
+        &:last-child{
+            padding-left: 20px;
+        }
+    }
+}

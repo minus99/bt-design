@@ -1,0 +1,109 @@
+.ems-fxd-lft{
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    width: inherit;
+    height: inherit;
+    z-index: inherit;
+}
+.bdy-fix{
+    position: inherit;
+    top:inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    width: inherit;
+    height: inherit;
+    overflow: inherit;
+}
+.mr-10{
+    margin-right: 10%;
+}
+.mt-fx{
+    margin-top: 100px;
+}
+.dVisible{
+    display: inherit;
+}
+.t-center{
+    text-align: center;
+}
+.pd-20{
+    padding-left: 0;
+    padding-right: 0;
+}
+.pdt-60{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pd-full-20{
+    padding: 0;
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+}
+.gray-bg{
+    background: #f8f8f8;
+}
+.site-mid-container{
+    max-width: $breakpoint-large;
+    @include m-left;
+    @include m-right;
+}
+.after-dsk{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 200, 200, 0.1);
+    pointer-events: none; 
+}
+.a-btns-rght{
+    bottom: 30px;
+    right: 30px;
+}
+.ems-flex-between{
+    @include flex;
+    justify-content: space-between;
+}
+.ems-flex{
+    @include flex;
+}
+.ems-flex-between-start{
+    justify-content: flex-start;
+}
+.open-video,
+.open-video .iconx{
+    width: 98px;
+    height: 98px;
+}
+.open-video{
+    .iconx{
+        line-height: 98px;
+        &:before{
+            font-size: 27px;
+        }
+    }
+}
+.anm{
+    @include transition;
+}
+.grid-theme{
+    @include grid;
+}
+.g-center{
+    align-items: center;
+}
+.double-el{
+    width: 50%;
+}
+.no-bg-hvr{
+    background: none;
+    > *{
+        color: #000000;
+    }
+}

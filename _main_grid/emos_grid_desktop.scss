@@ -1,0 +1,35 @@
+/*Site Genaral destkop*/
+.site-width-desktop{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.align-content{
+    text-align: center;
+}
+.font-1{
+    font-size: 22px;
+}
+.font-2{
+    font-size: 14px;
+}
+.font-4{
+    font-size: 16px;
+}
+
+/*Grid Kontrol*/
+.grd-sort{
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+    "AAA"
+    "BBB"
+    "CCC"
+    "DDD"
+    "EEE"; 
+}
+.g1{grid-area:AAA;}
+.g2{grid-area:BBB;}
+.g3{grid-area:CCC;}
+.g4{grid-area:DDD;}
+.g5{grid-area:EEE;}

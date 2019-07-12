@@ -1,0 +1,157 @@
+/*Hidden Elements*/
+.pageDescSifremiUnuttum,
+.pageDescUyeIslem{
+    display: none;
+}
+
+.ems-page-member{
+    padding-bottom: 30px;
+}
+.page-top-title,
+.pageHeaderSifremiUnuttum,
+.tableTitleUyeIslem{
+    font-size: 22px;
+    font-family:'semi_bold';
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000000;
+    @extend .dVisible;
+}
+/*Sifremi unuttum*/
+.pageSifremiUnuttum{
+    padding: 20px;
+}
+.tableSifremiUnuttum{
+    > tbody > tr > th{
+        padding-bottom: 10px;
+    }
+    > tbody > tr > th,
+    > tbody > tr > td{
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    img#imgCaptcha{
+        margin-top: 20px;
+    }
+    .pageLogin_btnUyeSifreGonder{
+        table{
+            display: table !important;
+            width: 100%;
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+}
+/*Left Menu*/
+.member-menu{
+    &.opened{
+        .mobi-dropdown-header{
+            &:after{
+                @include setTransform(translateY(-50%)rotate(180deg));
+            }
+        }
+        .mn-ul{
+            display: block;
+        }
+    }
+}
+
+.mobi-dropdown-header{
+    @extend .static;
+    background: #f6f6f6;
+    font-size: 15px;
+    min-height: 60px;
+    padding: 20px 50px 20px 15px;
+    font-family: semi_bold;
+    &:after{
+        font-family:'icomoon';
+        content:'\e904';
+        font-size: 25px;
+        @extend .iconx;
+        @extend .abs-cntr;
+        right: 20px;
+    }
+}
+.mmbr-mn{
+    .hdr img{display: none;}
+    .ico{
+        width: 190px;
+        height: 140px;
+        background: #f8f8f8;
+        >a{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            background: #f7f7f7;
+            text-align: center;
+            i{
+                line-height: 35px;
+            }
+        }
+    }
+    .usr{
+        -ms-writing-mode: tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        @include setTransform(rotate(180deg));
+        white-space: nowrap;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 100%;
+    }
+    .end{
+        align-items: flex-end;
+        padding-left: 40px;
+        overflow: hidden;
+        @extend .static;
+    }
+}
+
+.mn-ul{
+    display: none;
+    background: #f8f8f8;
+    padding: 10px;
+    li{
+        a{
+            @extend .blck;
+            @extend .static;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+}
+
+/*Aktivasyon*/
+.pageUyeIslem{
+    @extend .pd-full-20;
+}
+.tableUyeIslem{
+    width: 100%;
+    text-align: left;
+    tbody{
+        tr th{
+            padding-bottom: 10px;
+        }
+        tr th,
+        tr td{
+            @extend .blck;
+            input{
+                max-width: 350px;
+            }
+        }
+    }
+}
+.pageUyeIslem_btnUyeIslem{
+    table{
+        display: table !important;
+        width: 100%;
+        text-align: left;
+    }
+    .btnUyeIslem{
+        @extend .mt-20;
+    }
+}

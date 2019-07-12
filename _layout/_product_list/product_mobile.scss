@@ -1,0 +1,200 @@
+/*List View*/
+.views{
+    > a{
+        display: inline-block;
+        margin-left: 5px;
+        height: 25px;
+        &:nth-child(1),
+        &:nth-child(3){margin-left:0;}
+        i:before{
+            color: #9a9a9a;
+        }
+        &.obj-desktop{
+            display: none;
+        }
+        &.link_selected{
+            i:before{
+                color: $black;
+            }
+        }
+    }
+}
+html, body{
+    &.view-1{
+        .product-list-grid{
+            .ems-prd {
+                width: 100%;
+            }
+        }
+    }
+    &.view-2{
+        .product-list-grid{
+            .ems-prd {
+                width: 50%;
+            }
+        }
+    }
+}
+
+/*Product Cart*/
+.product-list-grid{ 
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @extend .empty;
+}
+.ems-prd{
+    @extend .iBlock;
+    vertical-align: top;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    &-inner{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        max-width: 400px;
+        position: relative;
+    }
+    &-image{
+        > a{
+            @extend .blck;
+            text-align: center;
+            @extend .static;
+            img{
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    }
+    &-name {
+        &:empty{
+            @extend .ems-none;
+        }
+        *{
+            display: inline-block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: $fs-13;    
+            font-family: 'semi_bold';   
+        }
+    }
+    &-brand{
+        @extend .abs-lft;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+    &-group {
+        @extend .abs-lft;
+        top: -70px;
+        right: 0;
+        padding-left: 22px;
+        padding-right: 22px;
+        overflow: hidden;
+        ul li{
+            height: 60px;
+            padding-left:3px;
+            padding-right:3px;
+            a{
+                display: block;
+                @extend .static;
+            }
+        }
+        .swiper-button-next{right:-20px;}
+        .swiper-button-prev{left:-20px;}
+
+        .swiper-button-next,
+        .swiper-button-prev{
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+            margin-top: -12px;
+            background: none;
+        }
+    }
+}
+.swiper-container-group-list{
+    overflow: visible !important;
+    width: 256px !important;
+}
+.urunListe_grupurunSayisi{
+    display: block!important;
+    > span{
+        font-size: $fs-13;
+        color: #646464;
+        @extend .empty;
+    }
+}
+
+/*View*/
+.view-2{
+    .ems-prd{
+        &:nth-child(5n+5){
+            width: 100% !important;
+        }
+    }
+}
+.urunListe_urunKategori{
+    &.emos_invisible{
+        display: block;
+    }
+    > a{
+        color: #646464;
+        font-size: $fs-13;
+        &:first-child {display: none;}
+    }
+    i{display: none;}
+}
+
+.loadmore-btn-list, a.btnDahaFazla{
+    width: 100%;
+    max-width: 170px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 29px;
+    padding-bottom: 24px;
+    margin-top: 100px;
+    font-size: 13px;
+}
+a.btnDahaFazla{
+    border-left-width: 0;
+    border-right-width: 0;
+    line-height: normal;
+    height: auto;
+    display: inline-block;
+    font-family:'font';
+    span{
+        font-size: 13px;
+    }
+}
+
+.site-scroll-list{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    a{
+        width: 50px;
+        height: 50px;
+        i{line-height: 50px;}
+    }
+}
+
+/*Product Empty*/
+.p-emty{
+    max-width: 680px;
+    margin: 5% auto 5% auto;
+    padding: 40px 30px;
+    background: #f9f9f9;
+    text-align: center;
+    h2{
+        font-family:'semi_bold';
+        font-size: 40px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

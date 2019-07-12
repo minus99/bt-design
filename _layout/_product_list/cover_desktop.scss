@@ -1,0 +1,60 @@
+.cover-list{
+    @include grid;
+    grid-template-columns:1fr minmax(auto, 10%) minmax(20px,5%);
+    grid-template-areas: "IMG . .";
+    .prm-media{
+        img{
+            grid-area: IMG;
+        }
+    }
+    h1, .sp, .ttl{
+        margin-top: 7%;
+    }
+    h1,h2{
+        position: initial;
+        top: initial;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1,h2,.ttl{
+        font-size: 45px;
+    }
+    .txt{
+        margin-left: 5%;
+        margin-right: 5%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        &-wht{
+            transform:none;
+            top: 120px;    
+        }
+    }
+    .txt-list{
+        padding-top: 0;
+    }
+    .rttTxt{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        @include setTransform(rotate(-90deg) translateY(-50%));
+        width: 25px;
+        &:empty{display: none;}
+    }
+}
+.cover-list-list{
+    h1,h2{
+        position: absolute;
+        top: 50%;
+        @include setTransform(translateY(-50%));
+    }
+}
+.cover-list-fmly{
+    h1{margin-top: 0; color: $white;}
+}
+
+/*Ürün liste Sonraki Kategori*/
+.urunliste_sonrakikategori:before{padding-right: 10px;}

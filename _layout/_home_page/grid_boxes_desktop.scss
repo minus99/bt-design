@@ -1,0 +1,64 @@
+/*Site Grid Boxes*/
+.box-sections{
+    padding-left: 0;
+    padding-right: 0;
+    .align-content{
+        padding-top: 10%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.box-grid{
+    max-width: 1045px;
+    margin-left: auto;
+    margin-right: auto;
+    > li{
+        width: initial;
+        padding: 5px;
+        > a{
+            span{
+                position: relative;
+                &:before{
+                    @extend .scaleX;
+                }
+            }
+            &:hover{
+                span:before{
+                    @extend .scaleXHover;
+                }
+            }
+        }
+    }
+}
+.box-grid.x6{
+    > li{
+        width: 16.666%;
+    }
+}
+.box-grid.x5{
+    > li{
+        width: 20%;
+    }
+}
+.box-grid.x4{
+    > li{
+        width: 25%;
+    }
+}
+.box-grid.x3{
+    > li{
+        width: 33.333%;
+    }
+}
+.box-grid.x2{
+    > li{
+        width: 50%;
+    }
+}
+
+.ems-page-home{
+    .box-sections .align-content{
+        padding-top: 5%;
+    }
+}

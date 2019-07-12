@@ -1,0 +1,99 @@
+/*List View*/
+.views{
+    > a{
+        &.obj-desktop{
+            display: inline-block;
+        }
+    }
+}
+html, body{
+    &.view-3{
+        .product-list-grid{
+            .ems-prd {
+                width: 33.333%;
+            }
+        }
+    }
+    &.view-4{
+        .product-list-grid{
+            .ems-prd {
+                width: 25%;
+            }
+        }
+    }
+}
+
+.ems-prd-list{
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-list-grid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.ems-prd{
+    width: 33.333%;
+    &-brand,
+    &-inner,
+    &-group,
+    &-wrap{
+        @include transition(all .2s ease);
+    }
+    &-image img{
+        @include transition(transform 333ms ease);
+        @include setTransform(scale(1));
+    }
+    &-brand{
+        opacity: 0;
+    }
+    &-brand{
+        transform: translateX(-10px);
+    }
+    &-cll{
+        opacity: 1;   
+    }
+    &-group{
+        opacity: 0;
+        visibility: hidden;
+    }
+    &-body{
+        min-height: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.ems-prd:hover{
+    z-index: 2;
+    .ems-prd-inner{
+        background: #fafafa;
+    }
+    .ems-prd-image img{
+        @include setTransform(scale(1.1));
+    }
+    .ems-prd-group{
+        opacity: 1;
+        visibility: visible;
+    }
+    .ems-prd-brand{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .ems-prd-cll{
+        animation: Transform .3s ease;
+    }
+    .ems-prd-inner{
+        margin-bottom: -60px;
+    }
+    .ems-prd-wrap{
+        margin-top: 60px;
+    }
+}
+/*No Grup Color*/
+.ems-prd.ems-no-color:hover{
+    .ems-prd-inner{ margin-bottom: 0; }
+    .ems-prd-wrap{margin-top: 0;}
+    .ems-prd-cll{transform: none; animation: none;}
+}

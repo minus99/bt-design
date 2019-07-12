@@ -1,0 +1,20 @@
+.grd-shw{
+    .rght{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    &:last-child{
+        .rght{
+            padding-bottom: 0;
+        }
+    }
+    .btnLink{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @extend .mt-20;
+    }
+}
+.shw-ttl{
+    font-size: 18px;
+    line-height: 30px;
+}

@@ -1,0 +1,45 @@
+/*Kariyer Form*/
+.ems-page-career{
+    .xmlFormHeader{display: none;}
+    .xmlFormAciklama{
+        @extend .blck;
+    }
+    .rowPd{
+        padding-bottom: 20px;
+    }
+}
+.xml-title{
+    font-size: 22px;
+}
+.mt-minus{
+    width: calc(100% - 30px);
+    margin-top: -30px;
+    background: $white;
+}
+.xml-form-desc{
+    padding-top: 50px;
+}
+.ems-field.upload{
+    @extend .mb-20;
+    .ems-form-obj{
+        height: 50px;
+        border: 1px solid #c7c7c7;
+    }
+    input{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: auto !important;
+        margin-top: -10px;
+    }
+}
+.spn-wrn{
+    @extend .mt-10;
+    color: #919191;
+    font-size: 13px;
+}
+.xfmIslemGerceklesiyor{
+    .ems-message{
+        @extend .mt-20;
+    }
+}

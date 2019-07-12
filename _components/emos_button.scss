@@ -1,0 +1,78 @@
+a.btnDefault{
+    font-family:'semi_bold';
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding:5px 5px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 145px;
+    display: inline-block;
+    > span{
+        font-size:$fs-12; 
+        color: $black;
+    }
+}
+a.btnDefault.btnDefault-white{
+    border-color:$white;
+    background: none;
+    > span{
+        color: $white;
+    }
+}
+
+a.btnDefaultOther{
+    border:none;
+    background:$color3;
+    span{
+        color:$black;
+    }
+}
+a.btnLink{
+    border: transparent;
+    span{
+        text-decoration: underline;
+    }
+}
+
+a.lnkDefault{
+    display: inline-block;
+    font-family:'font';
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btnReset, a.btnReset{
+    font-family: 'font';
+    border: none;
+    height: auto;
+    line-height: normal;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    > *{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+/*Mini Login Logout Button*/
+a.btnKutuLogout{
+    @extend .btnReset;
+    .iconx{
+        margin-left: 5px;
+    }
+}
+
+a.btnFavoriEkle {
+    &.selected{
+        background: #3b3b3b;
+        border-color: #3b3b3b;
+        span{
+            color: #fff;
+        }
+    }
+}

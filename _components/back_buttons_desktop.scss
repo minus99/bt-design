@@ -1,0 +1,27 @@
+/*Login Back Button*/
+.history-btn{
+    &.db{
+        padding: 0;
+        width: auto;
+        position: initial;
+        top: inherit;
+        left: inherit;
+        background: none;
+        z-index: inherit;
+        i:before{
+            content:'\e900';
+            font-size: 29px;
+        }
+        span{   
+            &.df{
+                display: inline-block;
+            } 
+            &.dsk{
+                display: none;
+            }
+        }
+    }
+}
+.history-btn-login{
+    display: inherit;
+}

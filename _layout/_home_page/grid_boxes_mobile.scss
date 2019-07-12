@@ -1,0 +1,29 @@
+/*Site Grid Boxes*/
+.box-sections{
+    padding-left: 10px;
+    padding-right: 10px;
+    .align-content{
+        padding-top: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &.hide{
+        .font-1{display: none;}
+    }
+}
+.box-grid{
+    > li{
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 50%;
+        > a{
+            @include block;
+        }
+        > a span{
+            display: inline-block;
+        }
+    }
+}

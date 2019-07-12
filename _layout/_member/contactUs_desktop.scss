@@ -1,0 +1,42 @@
+/**/
+.ems-page-contact{
+    .cover-list{
+        @extend .grid-theme;
+    }
+    .mt-minus{
+        width: auto;
+        margin-top: 0;
+        .xml-title{display: inherit;}
+    }
+    .xml-desc.mt-20{
+        margin-top: 20px;
+        font-size: 14px;
+        p{
+            line-height: 22px;
+        }
+    }
+}
+.contact-us-list{
+    margin-top: 50px;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    ul{
+        @extend .grid-theme;
+        grid-template-columns: repeat( auto-fill, minmax(auto, 350px) );
+        grid-column-gap: 100px;
+        &:first-child{
+            margin-bottom: 70px;
+        }
+        li{
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+    }
+}
+/*Form Title*/
+.contact-desc{
+    h2{
+        margin-top: 0;
+    }
+}

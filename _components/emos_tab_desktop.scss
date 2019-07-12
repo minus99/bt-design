@@ -1,0 +1,52 @@
+/* e-Mos Tab */
+.ems-tab-inner-header{
+    font-size: $fs-14;
+    font-family:'font';
+}
+
+/* e-Mos Tab Detail Page */
+.ems-tab-detail{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    .dsec-lbl{
+        margin-bottom: 35px;
+    }
+    .ul-wrp{
+        li{
+            width: 45%;   
+        }
+    }
+}
+/* e-Mos Tab Disbiritorler */
+.ems-tab-country{
+    margin-top: 70px;
+    .ems-tab-inner-header{
+        font-size: 18px;
+        &:after{display: none;}
+        &:first-child{border-top: none;}
+    }
+    .ems-tab-content{
+        > div{
+            .hdn-cntry{
+                display: block;
+            }
+            &.selected{
+                .ems-tab-inner-header{
+                    border-bottom:1px solid #efefef;
+                }
+            }
+        }
+        .ems-flex-between-start{
+            align-items: flex-start;
+        }
+    }
+    .country {
+        > div > ul{
+            margin-left: 9%;
+            width: auto;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}

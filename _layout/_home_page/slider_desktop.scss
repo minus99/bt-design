@@ -1,0 +1,21 @@
+/* Home Page Main Slider*/
+.homepage-slider{
+    .txt-cont{
+        left: 5%;
+        right: 5%;
+        padding-left: 0;
+        padding-right: 0;
+        > div{
+            max-width: 435px;
+        }
+        .g2{
+            font-size: 45px;
+        }
+        .btnDefault {
+            margin-top:20px;
+        }
+    }
+    .btn-Main{
+        display: block;
+    }
+}

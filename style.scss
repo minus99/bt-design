@@ -1,0 +1,173 @@
+//-------------------------------------------//
+//----- BASE
+//-------------------------------------------//
+
+//@import '_base/reset';
+@import '_base/emos';
+@import '_base/variables';
+@import '_base/mixin';
+@import '_base/animation';
+@import '_base/keyframes';
+@import '_base/lbf';
+@import '_base/vail';
+
+
+//-------------------------------------------//
+//----- COMPONENT
+//-------------------------------------------//
+@import '_components/toast';
+@import '_components/emos_button';
+@import '_components/navigation';
+@import '_components/emos_form_mobile';
+@import '_components/back_buttons_mobile';
+@import '_components/emos_tab_mobile';
+@import '_components/popup';
+
+
+
+//-------------------------------------------//
+//----- LAYOUT
+//-------------------------------------------//
+@import '_main_grid/emos_grid_mobile';
+@import '_main_grid/emos_grid_mobile';
+
+
+//-------------------------------------------//
+//----- HEADER
+//-------------------------------------------//
+@import '_layout/_header/header_grid_mobile';
+@import '_layout/_header_menu/menu_mobile';
+@import '_layout/_header_langs/lang-mobile';
+@import '_layout/_header_search/search_mobile';
+@import '_layout/_header_search/popular_search_mobile';
+@import '_layout/_header_login/login_mobile';
+
+
+//-------------------------------------------//
+//----- FOOTER
+//-------------------------------------------//
+@import '_layout/_footer/grid-row-mobile';
+@import '_layout/_footer/menu_mobile';
+@import '_layout/_footer/newsletter-mobile';
+@import '_layout/_footer/social-share-mobile';
+
+
+//-------------------------------------------//
+//----- FULL PAGES
+//-------------------------------------------//
+@import '_layout/_home_page/slider_mobile';
+@import '_layout/_home_page/grid_boxes_mobile';
+@import '_layout/_product_list/cover_mobile';
+@import '_layout/_product_list/product_mobile';
+@import '_layout/_product_list/filter_mobile';
+@import '_layout/_login_page/form_mobile';
+@import '_layout/_landing_pages/families_mobile';
+@import '_layout/_landing_pages/projects_mobile';
+@import '_layout/_landing_pages/design_hub_mobile';
+@import '_layout/_landing_pages/design_hub_detail_mobile';
+@import '_layout/_landing_pages/news_mobile';
+@import '_layout/_landing_pages/xml_form_mobile';
+@import '_layout/_landing_pages/showrooms_mobile';
+@import '_layout/_landing_pages/corporate_mobile';
+@import '_layout/_product_detail/gallery_slider_mobile';
+@import '_layout/_product_detail/product_card_mobile';
+@import '_layout/_product_detail/materials_mobile';
+@import '_layout/_member/download_mobile';
+@import '_layout/_member/layout_mobile';
+@import '_layout/_member/grid_row_mobile';
+@import '_layout/_member/contactUs_mobile';
+@import '_layout/_404/error_page';
+
+
+//-------------------------------------------//
+//----- PLUGINS
+//-------------------------------------------//
+@import '_plugins/swiper';
+@import '_swiper_modules/swiper_masonry_mobile';
+
+@import '_base/animation_library';
+
+
+//-------------------------------------------//
+//----- Media Query
+//-------------------------------------------//
+@supports(grid-area: auto) {
+    @media screen and (min-width: $breakpoint-medium) {
+        
+        //-------------------------------------------//
+        //----- BASE DESKTOP HIDDEN ELEMENT
+        //-------------------------------------------//        
+        @import '_base/hidden_element';
+        @import '_base/mixin_reset';
+        @import '_base/animation_desktop';
+        
+
+        //-------------------------------------------//
+        //----- COMPONENT
+        //-------------------------------------------//
+        @import '_components/emos_buttons_desktop';
+        @import '_components/emos_form_desktop';
+        @import '_components/back_buttons_desktop';
+        @import '_components/navigation_desktop';
+        @import '_components/emos_tab_desktop';
+        @import '_components/popup_desktop';
+
+        //-------------------------------------------//
+        //----- LAYOUT
+        //-------------------------------------------//
+        @import '_main_grid/emos_grid_desktop';
+
+
+        //-------------------------------------------//
+        //----- HEADER
+        //-------------------------------------------//
+        @import '_layout/_header/header_grid_desktop';
+        @import '_layout/_header_menu/menu_desktop';
+        @import '_layout/_header_langs/lang-desktop';
+        @import '_layout/_header_search/search_desktop';
+        @import '_layout/_header_search/popular_search_desktop';
+        @import '_layout/_header_login/login_desktop';
+
+        //-------------------------------------------//
+        //----- FOOTER
+        //-------------------------------------------//
+        @import '_layout/_footer/grid-row-desktop';
+        @import '_layout/_footer/menu_desktop';
+        @import '_layout/_footer/newsletter-desktop';
+        @import '_layout/_footer/social-share-desktop';
+        
+
+        //-------------------------------------------//
+        //----- FULL PAGES
+        //-------------------------------------------//
+        @import '_layout/_home_page/slider_desktop';
+        @import '_layout/_home_page/grid_boxes_desktop';
+        @import '_layout/_product_list/cover_desktop';
+        @import '_layout/_product_list/product_desktop';
+        @import '_layout/_product_list/filter_desktop';
+        @import '_layout/_login_page/form_desktop';
+        @import '_layout/_landing_pages/families_desktop';
+        @import '_layout/_landing_pages/projects_desktop';
+        @import '_layout/_landing_pages/design_hub_desktop';
+        @import '_layout/_landing_pages/design_hub_detail_desktop';
+        @import '_layout/_landing_pages/news_desktop';
+        @import '_layout/_landing_pages/xml_form_desktop';
+        @import '_layout/_landing_pages/showrooms_desktop';
+        @import '_layout/_landing_pages/corporate_desktop';
+        @import '_layout/_product_detail/gallery_slider_desktop';
+        @import '_layout/_product_detail/product_card_desktop';
+        @import '_layout/_product_detail/materials_desktop';
+        @import '_layout/_member/download_desktop';
+        @import '_layout/_member/cover_desktop';
+        @import '_layout/_member/layout_desktop';
+        @import '_layout/_member/grid_row_desktop';
+        @import '_layout/_member/contactUs_desktop';
+        @import '_layout/_404/error_page_desktop';
+
+        
+        //-------------------------------------------//
+        //----- PLUGINS
+        //-------------------------------------------//
+        @import '_swiper_modules/swiper_masonry_desktop';
+    }
+}

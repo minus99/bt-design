@@ -1,0 +1,103 @@
+/* Header lang */
+.mini-lang{
+    position: relative;
+    display: inline-block;
+}
+.mini-lang-info{
+    > span{
+        font-family:'semi_bold';
+        font-size: $fs-13;
+        color: $black;
+        display: inline-block;
+        line-height: 25px;
+        cursor: pointer;
+        &:before{
+            content:'Global | ';
+            font-size: $fs-13;
+            display: inline-block;
+            margin-right: 3px;
+        }
+        &:after{
+            font-family: 'icomoon';
+            content: "\e904";
+            font-size: 24px;
+            @extend .iconx-after;
+            vertical-align: top;
+        }
+    }
+}
+.mini-lang-sub{
+    display: none;
+    @extend .fixed-centered;
+    margin-top: -215px;
+    background: $white;
+    width: 700px;
+    height: 430px;
+    z-index: 10;
+}
+.map-cover{
+    @include relative;
+    .close-map{
+        @include absolute;
+        top: 10px;
+        right:10px;
+        left: inherit;
+        background: $color9;
+    }
+}
+.mini-lang-cnt{
+    padding: 35px 10px;
+    text-align: center;
+
+    a b, .map-title{
+        @include block;
+    }
+    .map-title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    a{
+        @include align-middle;
+        font-family: 'font';
+        font-size: $fs-14;
+        padding: 18px 30px;
+        img{
+            vertical-align: text-bottom;
+            margin-right: 10px;
+            max-width: max-content;
+        }
+        &.selected{
+            font-family:'bold';
+            text-decoration: underline;
+        }
+    }
+    a.multiLink-tr-TR{
+        border-left: 1px solid $color10;
+    }
+}
+
+.lang-mb{
+    > a{
+        @extend .db-bck;
+        width: 50%;
+        text-align: center;
+        padding: 22px 10px;
+        position: relative;
+        color: #afafaf;
+        &.act{
+            color: $black;
+        }
+        &:first-child{
+            &:after{
+                content:'';
+                width: 1px;
+                height: 30px;
+                background: #ececec;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-top: -15px;
+            }
+        }
+    }
+}

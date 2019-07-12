@@ -1,0 +1,226 @@
+/* Masonry Type Grid */
+
+.swiper-grid-title{
+    padding-top:8%;
+    padding-bottom: 8%;
+    > div{
+        max-width: 590px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .font-2{
+        margin-top: 10px;
+        line-height: 22px;
+    }
+}
+
+.swiper-grid{
+    padding-left: 0;
+    padding-right: 0;
+    .swiper-slide{
+        > a{
+            padding: 0;
+        }
+    }
+}
+.msn-wrapper{
+    @include flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    .swiper-slide,
+    .slide {
+        width: auto;
+        margin-bottom: 70px;
+    }
+    .type-1,
+    .type-4{
+        padding-right: 15px;
+    }
+    .type-2,
+    .type-4,
+    .type-4{
+        padding-left: 15px;
+    }
+    .type-1{
+        width: 45%;
+    }
+    .type-2{
+        width: 55%;
+    }
+    .type-3{
+        width: 100%;
+    }
+    .type-4,
+    .type-5{
+        width: 50%;   
+    }
+    .vertical{
+        padding-top: 20px;
+    }
+    .flexbox-column{
+        @include flex;
+        align-items: flex-end;
+        .vertical{
+            padding-top: 0;
+            padding-left: 30px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/*Product Families Gallery*/
+.swiper-gallery{
+    max-width: 1100px;
+    .swiper-wrapper{
+        @include grid;
+        -ms-grid-columns:minmax(0,550px) 90px minmax(0,460px);
+        grid-template-columns:minmax(0,550px) 90px minmax(0,460px);
+        grid-row-gap: 50px;
+        grid-template-areas:
+        "A . B"
+        "A . C";
+    }
+    .swiper-slide{
+        width: auto;
+        text-align: center;
+        img{
+            width: auto;
+        }
+    }
+    .type1{
+        grid-area: A;
+    }
+    .type2{
+        grid-area: B;
+    }
+    .type3{
+        grid-area: C;
+    }
+}
+
+/*Double Column Grid*/
+.swiper-db-clmn{
+    /*Title*/
+    .swiper-grid-title{
+        padding-bottom: 3%;
+    }
+    .swiper-wrapper{
+        @include grid;
+        grid-template-columns:minmax(0, 1.1fr) 10px minmax(0, 1fr);
+        grid-row-gap: 10px;
+        grid-template-areas: "A . B" "A . C";
+        justify-content: center;
+    }
+    .swiper-slide{
+        width: auto;
+    }
+    .type-1{
+        grid-area: A;
+    }
+    .type-2{
+        grid-area: B;
+    }
+    .type-3{
+        grid-area: C;
+    }
+}
+
+/*Product Families Widget*/
+.swiper-fmly-prd{
+    max-width: 1240px;
+    padding-left: 0;
+    padding-right: 0;
+    .swiper-title {
+        margin-top: 15%;
+    }
+    .font-1{font-size: 22px;}
+    .swiper-slide{
+        width: 25%;
+    }
+}
+
+/*3'lu Grid*/
+.swiper-db-horizontal,
+.swiper-db-vertical{
+    .swiper-wrapper{
+        @include grid;
+        -ms-grid-columns:repeat(3,minmax(0,340px));
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .font-1{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .swiper-slide{
+        width: auto;
+        height: auto;
+    }
+}
+
+.swiper-db-vertical{
+    .swiper-wrapper{
+        grid-column-gap:50px;
+    }
+    .swiper-inner{
+        margin-top: 9%;
+    }
+    .wrp{
+        .date, p{
+            font-family:'font';
+        }
+        .date{
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+        .ttl{
+            margin-top: 5px;
+            font-family: 'semi_bold';
+            font-size: 18px;
+            line-height: 26px;
+            height: 50px;
+            max-height: 50px;
+            overflow: hidden;
+        }
+        p{
+            margin-top: 15px;
+            line-height: 22px;
+            font-size: 14px;
+        }
+    }
+    .type-3{
+        align-self: center;
+    }
+}
+.swiper-db-horizontal{
+    .swiper-wrapper{
+        grid-column-gap:30px;
+    }
+    .type-1,
+    .type-3{
+        align-self: flex-start;
+    }
+    .type-2{
+        align-self: center;
+        >a{margin-top: 80px;}
+    }
+}
+
+/* Projects Brand Slider*/
+.swiper-container-brand{
+    .d-wrap{
+        flex-wrap: wrap;
+        li{
+            width: 16.666%;
+            img{width:auto;}
+        }
+    }
+}
+
+/*categories Slider*/
+.swiper-container-catg{
+    margin-top: 100px;
+}

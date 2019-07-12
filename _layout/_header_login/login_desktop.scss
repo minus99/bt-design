@@ -1,0 +1,38 @@
+/*Header mini Login*/
+.ems-logoff.mini-user-ready{
+    .mini-user-logoff{
+        display: block;
+    }
+}
+.ems-login.mini-user-ready{
+    .mini-user-logon{
+        display: block;
+    }
+}
+.mini-user-animate{
+    .mini-user-overlay{
+        opacity: 0.15;
+        display: block;
+    }
+}
+
+.mini-user-logoff{
+    @extend .transformX;
+}
+.ems-logoff .site-container{
+    @extend .bdyTransform;
+}
+.ems-logoff.mini-user-animate{
+    overflow: hidden;
+    .mini-user-logoff{
+        @extend .transformX_Anim;
+    }
+    .site-container{
+        @extend .bdyTransformAnim;
+    }
+}
+
+/*Home Page Special*/
+.page-home-grid{
+    .icon-profil:before{color: $white;}
+}

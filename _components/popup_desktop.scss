@@ -1,0 +1,102 @@
+.minPpIframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.jconfirm-closeIcon,
+.btnMinPpCl{
+    top: 20px;
+    right: 30px;
+}
+.grid-form{
+    @include grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    margin-top: 3%;
+}
+.grid-form-2{
+    grid-template-columns: repeat(2,1fr);
+}
+
+/*XML Form*/
+.xmlFormHeader{
+    margin-bottom: $fs-20;
+    font-size: $fs-22;
+    padding: 0;
+    background: none;
+}
+.xmlForm_btnGonder{
+    padding-bottom: 0;
+}
+
+/*Product Request Form*/
+.ems-custom-form,
+.ems-price-quate{
+    
+    .jconfirm-box-container{
+        max-width: 1330px !important;
+        margin-top: 85px;
+    }
+    .jconfirm-content-pane{height: calc(100vh - 115px) !important;} 
+    .jconfirm-content{
+        max-height: 840px !important;
+        overflow-y: inherit;
+    }
+}
+.request-from{
+    .chk-padding{
+        .font-3{font-size: $fs-12;}
+    }
+}
+.request-form-header{
+    top: 85px;
+    right: 110px;
+}
+.request-form-close{
+    background: $color9;
+}
+.request-form-prd{
+    .text{
+        font-size: $fs-14;
+    }
+}
+.request-form-body{
+    margin-top: 0;
+}
+.request-from .span1{
+    grid-column:span 3;
+}
+/*Gizlilik Politikasi Popup*/
+.plyc-popup{
+    max-width: 1020px;
+    height: 650px;
+    top: 5%;
+    .inner{
+        padding: 60px;
+    }
+}
+.prvcy-pp-cls{
+    top: 30px;
+    right: 30px;
+}
+.privacy-popup-ready .form-overlay{
+    display: block;
+}
+.privacy-popup-animate .form-overlay{
+    opacity: .55;
+}
+/*Favori Popup*/
+.fav-group-popup {
+    .minPpIframe{
+        padding: 0 !important;
+    }
+    .jconfirm-box{
+        margin-top: 5% !important;
+    }
+    .jconfirm-box-container{
+        max-width: 800px !important;
+    }
+    .jconfirm-content{
+        min-height: 450px !important;
+    }
+}

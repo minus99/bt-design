@@ -1,0 +1,21 @@
+.swiper-container-materials{
+    .swiper-wrapper{
+        justify-content: space-between;
+    }
+    .swiper-slide{
+        width: auto;
+        img{max-width: 90px;}
+    }
+}
+.materials-loop{
+    width: 16.666%;
+    &:nth-child(n+4){
+        display: block;
+    }
+    &:nth-child(n+7){
+        display: none;
+    }
+}
+.materials-li.opened .materials-loop:nth-child(n+7) {
+    display: block;
+}

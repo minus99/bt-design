@@ -1,0 +1,31 @@
+a.btnDefault,
+a.btnDefault span{
+    @extend .anm;
+}
+a.btnDefault{
+    background: none;
+    span{ color: $black; }
+    &:hover{
+        background:$black;
+        span{ color: $white; }
+    }
+}
+a.btnDefaultOther{
+    border:none;
+    background:$color3;
+    span{
+        color:$black;
+    }
+    &:hover{
+        background: #3b3b3b;
+    }
+}
+a.btnLink,
+a.btnArama,
+a.btnBultenGonder,
+a.btnKutuLogout{
+    &:hover{
+        background: none;
+        span{color: inherit;}
+    }
+}

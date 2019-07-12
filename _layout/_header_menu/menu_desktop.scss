@@ -1,0 +1,164 @@
+/*Header Menu*/
+.main-menu{
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    height: inherit;
+    overflow-y: inherit;
+    .sub-inner{
+        width: calc(100% - 30%);
+        @include m-left;
+        @include m-right;
+    }
+
+    /*Sub Menu Title Link*/
+    .title{
+        > a{
+            display: inline-block;
+            font-family:'semi_bold';
+            line-height: 22px;
+            font-size: 14px;
+            padding: inherit;
+        }
+        .default{display: block;}
+    }
+    ul.lvl-1{
+        height: inherit;
+        padding: inherit;
+        > li{
+            display: table-cell;
+            vertical-align: middle;
+            > a{
+                padding:5px 15px;
+                line-height: 75px;
+                font-size: $fs-13;
+                min-width: inherit;
+            }
+        }
+    }
+    ul.lvl-2{
+        display: table;
+        @include m-left;
+        @include m-right;
+        width: 100%;
+        > li{
+            display: table-cell;
+            vertical-align: top;
+            img{
+                display: inherit;
+            }
+            &.typ-img{
+                width: 70%;
+                padding-right: 50px;
+                padding-left: 15px;
+                > a{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 20%;
+                    text-align: center;
+                    margin-top: 30px;
+                    font-family: 'font';
+                    font-size: $fs-13;
+                    img{
+                        display: block;
+                        max-width: 90px;
+                        @include m-left;
+                        @include m-right;
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        @include relative;
+                        padding-bottom: 1px;
+                        &:after{
+                            @extend .scaleX;
+                        }
+                    }
+                    &:hover{
+                        span:after{
+                            @extend .scaleXHover;
+                        }
+                    }
+                }
+            }
+            &.typ-lnk{
+                width: 30%;
+                padding-left: 50px;
+            }
+        }
+    }
+    ul.lvl-3{
+        display: table;
+        width: 100%;
+        position: relative;
+        &:before{
+            content:'';
+            background: $color5;
+            width: 1px;
+            height: 100px;
+            position: absolute;
+            top: 30px;
+            left: -50px;
+        }
+        > li{
+            min-width: 50%;
+            display: table-cell;
+            vertical-align: top;
+            padding-top: 25px;
+            > a{
+                font-family: 'font';
+                font-size: $fs-13;
+                line-height: 22px;
+                display: block;
+                span{
+                    @include relative;
+                    padding-bottom: 1px;
+                    &:after{
+                        @extend .scaleX;
+                    }
+                }
+                &:hover{
+                    span:after{
+                        @extend .scaleXHover;
+                    }
+                }
+                &.view-all{
+                    margin-top: 25px;
+                    span{
+                        text-decoration: underline;
+                        &:after{display: none;}
+                    }
+                }
+            }
+        }
+    }
+    .ems-sub-menu{
+        > a:after{
+            display: none;
+        }
+    }
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: auto;
+    background: $white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+/*Home Page Special*/
+.page-home-grid{
+    ul.lvl-1{
+        > li{
+            > a{
+                font-family: 'semi_bold';
+                font-size: $fs-13;
+            }
+        }
+    }
+}

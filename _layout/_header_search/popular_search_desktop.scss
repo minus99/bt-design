@@ -1,0 +1,14 @@
+.search-populer{
+    padding: 20px 0 0 0;
+}
+.search-populer-title{
+    font-family: 'semi_bold';
+    font-size: $fs-18;
+}
+.populer-words-list{
+    flex-wrap: nowrap;
+    li{
+        width: 25%;
+        text-align: left;
+    }
+}

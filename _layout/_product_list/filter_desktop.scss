@@ -1,0 +1,119 @@
+.kutuOzellikFiltre{
+    background: $color6;
+    padding:70px 130px 80px 130px;
+    grid-template-columns:minmax(auto,1fr) minmax(0,300px);
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 5;
+    min-height: 350px;
+}
+.ems-filter-ready{
+    .kutuOzellikFiltre{
+        @include grid;
+    }
+}
+.kutuHeaderOzellikFiltre{
+    display: none;
+}
+.urunKiyaslamaOzellik_ozellikAd{
+    border-top:none;
+    font-family:'font';
+    font-size: 13px;
+    pointer-events: none;
+    padding-right: 0;
+    &:after{display: none;}
+}
+.kutuBodyOzellikFiltre{
+    height: inherit;
+    overflow-y:inherit;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    > table{
+        height: inherit;
+        > tbody > tr{
+            @extend .ems-flex;
+            align-items: flex-start;
+            > td{
+                display: inherit;
+                width: auto;
+                min-width: 31.333%;
+                margin-left: 1%;
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+.urunKiyaslamaOzellik_ozellikIcerik{
+    padding-top: 0;
+    padding-bottom: 0;
+    > table{
+        > tbody{
+            > tr {
+                @extend .ems-flex;
+                width: 100%;
+                > td{
+                    display: inherit;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+.typ1{
+    .urunKiyaslamaOzellik_ozellikIcerik > table > tbody > tr{
+        flex-wrap: wrap;
+    }
+    .urunKiyaslamaOzellik_ozellikIcerik > table > tbody > tr > td{
+        width: 100%;
+    }
+}
+a.urunKiyaslamaOzellik{
+    font-size: 13px;
+}
+.kutuFooterOzellikFiltre {
+    height: 100%;
+    align-self: flex-end;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    border-top:none;
+    a.btnDefault, .urunKiyaslamaOzellik_tumunuTemizle{
+        width: 50%;
+        min-width: inherit;
+    }
+    a.btnFilterClear,
+    .urunKiyaslamaOzellik_tumunuTemizle{
+        font-family: 'font';
+        margin-right: 30px;
+        max-width: 115px;
+    }
+    a.btnFilterClear,
+    a.btnFilterApply,
+    .urunKiyaslamaOzellik_tumunuTemizle{
+        align-self: flex-end;
+    }
+    .urunKiyaslamaOzellik_tumunuTemizle > a{
+        font-family: 'font';
+        width: 100%;
+    }
+}
+.ems-sort{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 25px;
+}
+
+.ems-pagination-hide{
+    .kutuFooterOzellikFiltre{
+        a.btnFilterApply{
+            background: #000000;
+            span{color: #fff;}
+        }
+    }
+}

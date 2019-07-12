@@ -1,0 +1,78 @@
+.ems-page-downloads{
+    padding-top: 30px;
+}
+
+/*Download Search Input*/
+.ems-docs-search{
+    margin-bottom: 30px;
+    input{
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-color: #000000;
+        color: #000000;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+}
+
+/*Download List*/
+.documents-download-result{
+    ul{
+        background: #fcfcfc;
+        padding:30px 20px;
+        &:empty{
+            @extend .ems-none;
+        }
+    }
+}
+.ddr-prd-item-lbf{
+    padding-bottom: 20px;
+    font-family:'semi_bold';
+}
+.ddr-prd-item{
+    .uk-accordion-content{
+        margin-top: 30px;
+    }
+}
+.ddr-prd-item-docs{
+    .doc-item{
+        > a{
+            @extend .blck;
+        }
+    }
+    .doc-info{
+        > span{
+            width: 50%;
+        }
+        .type {
+            justify-content: flex-end;
+            span{
+                margin-right: 30px;
+            }
+        }
+    }
+    li{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+.ddr-prd-name{
+    padding-top: 10px;
+    font-family:'semi_bold';
+    font-size: 13px;
+    &:empty{display: none;}
+}
+.btn-docs-search,
+.btn-docs-remove{
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    height: 25px;
+}
+.btn-docs-search{
+    left: 0;
+}
+.btn-docs-remove{
+    right: 0;
+}
