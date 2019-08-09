@@ -1,0 +1,244 @@
+/*Font*/
+@font-face {
+    font-family: 'font';
+    src: url('/styles/fonts/ProtoGroteskLight.eot');
+    src: url('/styles/fonts/ProtoGroteskLight.eot') format('embedded-opentype'),
+        url('/styles/fonts/ProtoGroteskLight.woff2') format('woff2'),
+        url('/styles/fonts/ProtoGroteskLight.woff') format('woff'),
+        url('/styles/fonts/ProtoGroteskLight.ttf') format('truetype'),
+        url('/styles/fonts/ProtoGroteskLight.svg#font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'semi_bold';
+    src: url('/styles/fonts/spacegrotesk-semibold-webfont.eot');
+    src: url('/styles/fonts/spacegrotesk-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/styles/fonts/spacegrotesk-semibold-webfont.woff2') format('woff2'),
+        url('/styles/fonts/spacegrotesk-semibold-webfont.woff') format('woff'),
+        url('/styles/fonts/spacegrotesk-semibold-webfont.ttf') format('truetype'),
+        url('/styles/fonts/spacegrotesk-semibold-webfont.svg#semi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('/styles/fonts/spacegrotesk-bold-webfont.eot');
+    src: url('/styles/fonts/spacegrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/styles/fonts/spacegrotesk-bold-webfont.woff2') format('woff2'),
+        url('/styles/fonts/spacegrotesk-bold-webfont.woff') format('woff'),
+        url('/styles/fonts/spacegrotesk-bold-webfont.ttf') format('truetype'),
+        url('/styles/fonts/spacegrotesk-bold-webfont.svg#bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/***Icons***/
+@font-face {
+    font-family: 'icomoon';
+    src: url('/styles/fonts/icomoon/fonts/icomoon.eot?9x37c4');
+    src: url('/styles/fonts/icomoon/fonts/icomoon.eot?9x37c4#iefix') format('embedded-opentype'),
+        url('/styles/fonts/icomoon/fonts/icomoon.ttf?9x37c4') format('truetype'),
+        url('/styles/fonts/icomoon/fonts/icomoon.woff?9x37c4') format('woff'),
+        url('/styles/fonts/icomoon/fonts/icomoon.svg?9x37c4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/***Icons***/
+.icon-log-out:before {
+  content: "\e923";
+}
+.icon-player:before {
+  content: "\e922";
+}
+.icon-minus:before {
+  content: "\e920";
+}
+.icon-plus:before {
+  content: "\e921";
+}
+.icon-group-next:before {
+  content: "\e91e";
+}
+.icon-group-prev:before {
+  content: "\e91f";
+}
+.icon-mail:before {
+  content: "\e91d";
+}
+.icon-doc:before {
+  content: "\e91c";
+}
+.icon-account:before {
+  content: "\e91a";
+}
+.icon-home:before {
+  content: "\e91b";
+}
+.icon-view-1:before {
+  content: "\e916";
+}
+.icon-view-2:before {
+  content: "\e917";
+}
+.icon-view-3:before {
+  content: "\e918";
+}
+.icon-view-4:before {
+  content: "\e919";
+}
+.icon-menu:before {
+  content: "\e915";
+}
+.icon-drop-left:before {
+  content: "\e913";
+}
+.icon-drop-right:before {
+  content: "\e914";
+}
+.icon-eye:before {
+  content: "\e90f";
+}
+.icon-mouse:before {
+  content: "\e912";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e902";
+}
+.icon-download:before {
+  content: "\e903";
+}
+.icon-drop-bottom:before {
+  content: "\e904";
+}
+.icon-drop-top:before {
+  content: "\e905";
+}
+.icon-facebook:before {
+  content: "\e906";
+}
+.icon-instagram:before {
+  content: "\e907";
+}
+.icon-linkedin:before {
+  content: "\e908";
+}
+.icon-pinterest:before {
+  content: "\e909";
+}
+.icon-profil:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-slide-next:before {
+  content: "\e90c";
+}
+.icon-slide-prev:before {
+  content: "\e90d";
+}
+.icon-top-scroll:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e910";
+}
+.icon-youtube:before {
+  content: "\e911";
+}
+/***Icons***/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1.15;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+html, body{ width: 100%; height: 100%; font-size: 14px;}
+body { -moz-osx-font-smoothing: grayscale;  -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(0, 0, 0, .05); text-rendering: optimizeLegibility; color: #000000; font-size: 14px; font-family:font, Arial, Helvetica, sans-serif; }
+/* General settings
+=================================== */
+*{ margin: 0; padding: 0; }
+
+*,
+*:after,
+*::before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.anaBody { overflow-x: hidden; }
+
+body a{text-decoration: none;color: #000000; font-size: 14px; }
+body b, body strong{ font-weight: normal; }
+body p{ line-height: 22px; }
+
+
+/*Search Page*/
+.pageArama,
+.tableTitleArama,
+.tableArama,
+.tblBtnAraIptal{display: none;}

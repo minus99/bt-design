@@ -1,12 +1,15 @@
 .ems-page-downloads{
     padding-top: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 .ems-docs-search{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
-
+.documents-download-result{
+    ul{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 /*Download List*/
 .ddr-prd-item{
     justify-content: center;
@@ -18,4 +21,7 @@
         padding-left: 50px;
         margin-top: 0;
     }
+}
+.catalog-lst-bg{
+    background: #fafafa;
 }

@@ -41,8 +41,8 @@ html, body{
     justify-content: flex-start !important;
     flex-wrap: wrap;
     margin-top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     @extend .empty;
 }
 .ems-prd{
@@ -70,22 +70,24 @@ html, body{
             }
         }
     }
+    &-cat{
+        font-size: $fs-13;    
+        font-family: 'semi_bold';
+    }
     &-name {
         &:empty{
             @extend .ems-none;
         }
         *{
+            font-size: $fs-13;
             display: inline-block;
             padding-top: 5px;
-            padding-bottom: 5px;
-            font-size: $fs-13;    
-            font-family: 'semi_bold';   
+            padding-bottom: 5px;               
         }
     }
     &-brand{
         @extend .abs-lft;
-        padding-top: 20px;
-        padding-left: 20px;
+        padding-top: 10px;
         font-size: 12px;
     }
     &-group {
@@ -122,11 +124,13 @@ html, body{
     width: 256px !important;
 }
 .urunListe_grupurunSayisi{
-    display: block!important;
+    display: block !important;
     > span{
         font-size: $fs-13;
         color: #646464;
+        @extend .blck;
         @extend .empty;
+        margin-top: 5px;
     }
 }
 
@@ -197,4 +201,8 @@ a.btnDahaFazla{
         margin-top: 20px;
         font-size: 16px;
     }
+}
+
+.ems-page-list{
+    .ems-prd-name{display: none;}
 }

@@ -50,6 +50,15 @@
     }
     .type-3{
         width: 100%;
+        .type-grid{
+            @include flex;
+            align-items: flex-end;
+        }
+        .vertical{
+            padding-top: 0;
+            padding-left: 30px;
+            padding-bottom: 50px;
+        }
     }
     .type-4,
     .type-5{
@@ -114,6 +123,7 @@
     }
     .swiper-slide{
         width: auto;
+        .link-btn img{max-width: 30px;}
     }
     .type-1{
         grid-area: A;
@@ -145,8 +155,8 @@
 .swiper-db-vertical{
     .swiper-wrapper{
         @include grid;
-        -ms-grid-columns:repeat(3,minmax(0,340px));
-        grid-template-columns:repeat(3,minmax(0,1fr));
+        -ms-grid-columns:repeat(3,minmax(0,auto));
+        grid-template-columns:repeat(3,minmax(0,auto));
         justify-content: center;
         align-items: flex-start;
     }
@@ -166,6 +176,9 @@
     }
     .swiper-inner{
         margin-top: 9%;
+    }
+    .swiper-slide{
+        align-self: center;
     }
     .wrp{
         .date, p{
@@ -191,21 +204,10 @@
             font-size: 14px;
         }
     }
-    .type-3{
-        align-self: center;
-    }
 }
 .swiper-db-horizontal{
     .swiper-wrapper{
         grid-column-gap:30px;
-    }
-    .type-1,
-    .type-3{
-        align-self: flex-start;
-    }
-    .type-2{
-        align-self: center;
-        >a{margin-top: 80px;}
     }
 }
 

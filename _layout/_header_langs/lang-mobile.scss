@@ -11,12 +11,6 @@
         display: inline-block;
         line-height: 25px;
         cursor: pointer;
-        &:before{
-            content:'Global | ';
-            font-size: $fs-13;
-            display: inline-block;
-            margin-right: 3px;
-        }
         &:after{
             font-family: 'icomoon';
             content: "\e904";

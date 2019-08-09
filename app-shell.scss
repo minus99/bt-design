@@ -1,0 +1,86 @@
+//@import '_base/reset';
+@import '_base/emos';
+@import '_app-shell/main';
+@import '_base/variables';
+@import '_base/mixin';
+@import '_base/animation';
+@import '_base/animation_library';
+@import '_base/vail';
+
+
+//-------------------------------------------//
+//----- HEADER
+//-------------------------------------------//
+@import '_layout/_header/header_grid_mobile';
+@import '_layout/_header_menu/menu_mobile';
+@import '_layout/_header_langs/lang-mobile';
+@import '_layout/_header_search/search_mobile';
+@import '_layout/_header_search/popular_search_mobile';
+@import '_layout/_header_login/login_mobile';
+
+
+//-------------------------------------------//
+//----- FOOTER
+//-------------------------------------------//
+@import '_layout/_footer/grid-row-mobile';
+@import '_layout/_footer/menu_mobile';
+@import '_layout/_footer/newsletter-mobile';
+@import '_layout/_footer/social-share-mobile';
+
+
+//-------------------------------------------//
+//----- COMPONENT
+//-------------------------------------------//
+@import '_components/emos_button';
+@import '_components/back_buttons_mobile';
+@import '_components/popup';
+@import '_app-shell/default-load';
+
+//-------------------------------------------//
+//----- LAYOUT
+//-------------------------------------------//
+@import '_main_grid/emos_grid_mobile';
+
+//-------------------------------------------//
+//----- Media Query
+//-------------------------------------------//
+@supports(grid-area: auto) {
+    @media screen and (min-width: $breakpoint-medium) {
+
+        //-------------------------------------------//
+        //----- BASE DESKTOP HIDDEN ELEMENT
+        //-------------------------------------------//        
+        @import '_base/hidden_element';
+        @import '_base/mixin_reset';
+        @import '_base/animation_desktop';
+
+         //-------------------------------------------//
+        //----- HEADER
+        //-------------------------------------------//
+        @import '_layout/_header/header_grid_desktop';
+        @import '_layout/_header_menu/menu_desktop';
+        @import '_layout/_header_langs/lang-desktop';
+        @import '_layout/_header_search/search_desktop';
+        @import '_layout/_header_search/popular_search_desktop';
+        @import '_layout/_header_login/login_desktop';
+
+        //-------------------------------------------//
+        //----- FOOTER
+        //-------------------------------------------//
+        @import '_layout/_footer/grid-row-desktop';
+        @import '_layout/_footer/menu_desktop';
+        @import '_layout/_footer/newsletter-desktop';
+        @import '_layout/_footer/social-share-desktop';
+        
+
+        //-------------------------------------------//
+        //----- COMPONENT
+        //-------------------------------------------//
+        @import '_components/emos_buttons_desktop';
+        @import '_components/back_buttons_desktop';
+        @import '_components/popup_desktop';
+
+        @import '_main_grid/emos_grid_desktop';
+
+    }
+}

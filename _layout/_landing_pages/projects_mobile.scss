@@ -1,7 +1,8 @@
 .ems-page-projects {
     padding-bottom: 100px;
-    .icerikTemplateListeContainer{
-        display: none;
+    .icerikTemplateListeContainer,
+    .icerikBlogListe_dahaFazla{
+        @extend .ems-none;
     }
     .site-scroll-list{
         margin-top: 100px;
@@ -20,6 +21,11 @@
     .swiper-wrapper{
         li{
             width: auto;
+            &.selected{
+                a{
+                    text-decoration: underline; 
+                }
+            }
         }
     }
     .blck{
@@ -184,9 +190,6 @@
     }
     .prd {
         max-width: 300px;
-        &:after{
-            @extend .after-img;
-        }
     }
     .hdn-ct >a{
         font-family: 'semi_bold';
@@ -197,11 +200,12 @@
 }
 .ct-lst{
     > span{
-        &:before{
+        @extend .db-bck;
+        padding-right: 5px;
+        &:after{
             content:',';
-            padding-right: 2px;
         }
-        &:first-child:before{display: none;}
+        &:last-child:after{display: none;}
     }
 }
 

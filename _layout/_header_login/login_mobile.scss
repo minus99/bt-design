@@ -55,6 +55,17 @@
 }
 .kutuUyeGiris_profilFoto{
     display: block !important;
+    width: 80px;
+    height: 80px;
+    img{
+        display: none;
+    }
+    &.female{
+        background: url(/images/frontend/female.svg) center center no-repeat#323139;
+    }
+    &.male{
+        background: url(/images/frontend/male.svg) center center no-repeat#323139;
+    }
 }
 label[id$="lbfKUTU_UYEBENIHATIRLA_FL"]{
     padding-top: 5px;

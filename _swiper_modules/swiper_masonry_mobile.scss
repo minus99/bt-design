@@ -1,5 +1,4 @@
 /* Masonry Type Grid */
-
 .swiper-grid-title{
     padding: 50px 10px 25px 10px;
     .font-2{
@@ -92,11 +91,11 @@
         p{
             max-width: 100%;
             text-overflow: ellipsis;
-            min-height: 66px;
-            max-height: 66px;
+            min-height: 42px;
+            max-height: 42px;
             overflow: hidden;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             display: -webkit-box;
         }
     }

@@ -88,6 +88,14 @@
             font-size: 27px;
         }
     }
+    &.is-play{
+        .iconx{
+            &:before,
+            &:after{
+                height: 27px;
+            }
+        }
+    }
 }
 .anm{
     @include transition;

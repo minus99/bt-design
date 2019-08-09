@@ -48,6 +48,14 @@
             &:nth-child(2){margin-bottom: 40px;}
         }
     }
+    .ems-tab-inner-content .ems-tab-content{
+        > div{
+            display: none;
+        }
+        > div.selected{
+            display: block;
+        }
+    }
 }
 /* e-Mos Tab Disbiritorler */
 .ems-tab-country{

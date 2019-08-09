@@ -165,3 +165,17 @@
 .stt-20{
     margin-top: 0;
 }
+
+/*Kataloglar*/
+.catalog-lst{
+    justify-content: center;
+    margin-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    > div{
+        flex: 25%;
+        width: 25%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}

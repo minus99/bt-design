@@ -5,6 +5,7 @@
     .prm-media{
         img{
             grid-area: IMG;
+            min-height: 100px;
         }
     }
     h1, .sp, .ttl{
@@ -42,6 +43,7 @@
         right: 0;
         @include setTransform(rotate(-90deg) translateY(-50%));
         width: 25px;
+        white-space: nowrap;
         &:empty{display: none;}
     }
 }

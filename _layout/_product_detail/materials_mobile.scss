@@ -1,6 +1,7 @@
 .ems-tab-materials-header{
     > a{
         @extend .db-bck;
+        @extend .mt-15;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 15px;
@@ -12,6 +13,7 @@
 .materials-wrap{
     @extend .mt-20;
 }
+
 .all-colors-wrap{
     justify-content: space-between;
     @extend .font-6;
@@ -72,6 +74,9 @@
     }
     &:nth-child(n+4){
         display: none;
+    }
+    > span{
+        min-height: 27px;
     }
 }
 .materials-li.opened .materials-loop:nth-child(n+4) {display: block;}

@@ -22,5 +22,22 @@
     .clmn-2{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
+        #divUlkeBilgi,
+        #dvSehirBilgi{
+            .prmSehir,
+            span[id$="lbfPRM_ULKESEHIR"]{
+                display: inline-block !important;
+                padding-bottom: 7px;
+                line-height: 20px;
+                width: 100%;
+            }
+        }
+        #dvSehirBilgi{
+            .prmSehir{
+                &:before{
+                    content:'*';
+                }
+            }
+        }
     }
 }

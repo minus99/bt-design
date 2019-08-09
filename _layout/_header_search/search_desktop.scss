@@ -39,8 +39,7 @@
 .searchSuggestDiv{
     position:relative !important;
     top: 0 !important;
-    height: auto;
-    overflow-y: inherit;
+    height: calc(100vh - 250px);
     .prd {
         .sHolder{
             max-width: 1240px;

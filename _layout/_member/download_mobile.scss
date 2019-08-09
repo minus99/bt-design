@@ -18,9 +18,10 @@
 
 /*Download List*/
 .documents-download-result{
+    margin-bottom: 50px;
     ul{
         background: #fcfcfc;
-        padding:30px 20px;
+        padding:30px 10px;
         &:empty{
             @extend .ems-none;
         }
@@ -75,4 +76,18 @@
 }
 .btn-docs-remove{
     right: 0;
+}
+.catalog-lst-bg{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .catalog-lst{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.catalog-lst-ttl{
+    .t1{
+        @extend .f-sBold;
+        font-size: 22px;
+    }
 }

@@ -13,7 +13,7 @@
 
     /*Sub Menu Title Link*/
     .title{
-        > a{
+        > a, > span{
             display: inline-block;
             font-family:'semi_bold';
             line-height: 22px;
@@ -33,6 +33,7 @@
                 line-height: 75px;
                 font-size: $fs-13;
                 min-width: inherit;
+                position: relative;   
             }
         }
     }

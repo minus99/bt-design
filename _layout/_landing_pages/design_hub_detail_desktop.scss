@@ -1,16 +1,17 @@
 .design-hub-detail{
     padding-bottom: 0;
-    .pdt{
-        padding-bottom: 300px;
-    }
     .history-btn{
         .df, i:before{color: $white;}
+    }
+    .pdt{
+        padding-bottom: 100px;
     }
     .marquee{
         top: 25%;
         @include setTransform(translateY(-25%));
         height: 180px;
-        div{
+        > div{
+            width: 200%;
             height: 180px;
             font-size: 180px;
         }
@@ -22,9 +23,8 @@
         }
     }
 }
-.dsgn-proc-abs{
-    position: absolute;
-    top: -100px;
+.mt-dsgn-minus{
+    padding-top: 100px;
 }
 .yr-prf-ul{
     width: 70%;

@@ -31,7 +31,10 @@
 }
 
 /*Timeline*/
-.time-line{ background:#f8f8f8; }
+.time-line{
+    background:#f8f8f8;
+}
+
 .time-line-title{
     text-align: left;
     font-size: 22px;
@@ -94,4 +97,28 @@
 }
 .stt-20{
     @extend .mt-20;
+}
+
+/*Kataloglar*/
+.catalog-lst{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    > div{
+        flex: 50%;
+        width: 50%;
+        padding: 10px 7.5px;
+        margin-bottom: 20px;
+    }
+    .t1{
+        @extend .f-sBold;
+        font-size: 16px;
+        padding-top: 15px;
+        min-height: 52px;
+    }
+    .t2{
+        padding-top: 5px;
+        font-size: 13px;
+    }
 }

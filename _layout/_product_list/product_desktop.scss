@@ -47,6 +47,7 @@ html, body{
     }
     &-brand{
         opacity: 0;
+        padding-left: 20px;
     }
     &-brand{
         transform: translateX(-10px);
@@ -96,4 +97,8 @@ html, body{
     .ems-prd-inner{ margin-bottom: 0; }
     .ems-prd-wrap{margin-top: 0;}
     .ems-prd-cll{transform: none; animation: none;}
+}
+
+.ems-page-list{
+    .ems-prd-name{display: inherit;}
 }

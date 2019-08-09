@@ -2,7 +2,6 @@
     padding-bottom: 80px;
     .pdt{
         padding-top: 100px;
-        padding-bottom: 200px;
     }
     .marquee{
         position: absolute;
@@ -10,7 +9,8 @@
         left: 0;
         height: 85px;
         margin-top: 0;
-        div{
+        > div{
+            width: 250%;
             height: 85px;
             font-size: 70px;
             color: #272727;
@@ -18,11 +18,11 @@
     }
 }
 .mt-dsgn-minus{
-    margin-top: -200px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 .design-hub-inner{
     background: #f4f4f4;
-    padding-bottom: 100px;
 }
 .title-designer{
     font-size: 22px;

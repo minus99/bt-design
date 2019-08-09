@@ -342,6 +342,22 @@
             font-size: 24px;
         }
     }
+    &.is-play{
+        .iconx{
+            &:before,
+            &:after{
+                content:'';
+                width:5px;
+                height: 17px;
+                background: #000;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &:after{
+                margin-left: 5px;
+            }
+        }
+    }
 }
 .z-1{
     z-index: 1;
@@ -356,5 +372,5 @@
     background-color: #f8f8f6;
 }
 .type-overflow{
-    overflow: hidden;
+    overflow: hidden;   
 }

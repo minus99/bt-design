@@ -21,12 +21,7 @@
 .grd-sort{
     display: -ms-grid;
     display: grid;
-    grid-template-areas:
-    "AAA"
-    "BBB"
-    "CCC"
-    "DDD"
-    "EEE"; 
+    grid-template-areas:"AAA" "BBB" "CCC" "DDD" "EEE"; 
 }
 .g1{grid-area:AAA;}
 .g2{grid-area:BBB;}

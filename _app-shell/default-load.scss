@@ -1,0 +1,81 @@
+/*Ürün Detay Grup Ürünler*/
+.UrunListeGrup_listeUrunDetayGrup .prdName,
+.UrunListeGrup_listeUrunDetayGrup .salesPrice,
+.UrunListeGrup_listeUrunDetayGrup .urunGrup_urunTipi,
+.UrunListeGrup_listeUrunDetayGrup .BRM_SPR_AD{display: none;}
+
+.UrunDetayGrup_Urunler{padding-left: 40px; padding-right: 40px;}
+.UrunListeGrup_listeUrunDetayGrup{ overflow: visible !important; width: 100%; height: 100%; margin: 0 auto; position: relative; list-style: none; padding: 0; z-index: 1; }
+.UrunListeGrup_listeUrunDetayGrup:empty{display: none;}
+.UrunListeGrup_listeUrunDetayGrup .listeUrunDetayGrup_listeBaslik{margin-top: 50px;}
+
+.UrunListeGrup_listeUrunDetayGrup .swiper-inner{ width: 100%; height: 100%; overflow: hidden; }
+.UrunListeGrup_listeUrunDetayGrup .swiper-container,
+.UrunListeGrup_listeUrunDetayGrup ul,
+.UrunListeGrup_listeUrunDetayGrup ul li,
+.swiper-container-group-list .swiper-container,
+.swiper-container-group-list ul,
+.swiper-container-group-list ul li{ -webkit-transform: translate3d(0px, 0, 0); transform: translate3d(0px, 0, 0); }
+
+.UrunListeGrup_listeUrunDetayGrup ul,
+.swiper-container-group-list ul {
+    position: relative; width: 100%; height: 100%; z-index: 1; display: -webkit-box; display: -webkit-flex;
+    display: -ms-flexbox; display: flex; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -o-transition-property: transform; transition-property: transform; transition-property: transform, -webkit-transform; -webkit-box-sizing: content-box; box-sizing: content-box;
+}
+.swiper-container-group-list.item-1 .swiper-wrapper,
+.swiper-container-group-list.item-2 .swiper-wrapper,
+.swiper-container-group-list.item-3 .swiper-wrapper,
+.swiper-container-group-list.item-4 .swiper-wrapper{
+    justify-content: center;
+}
+
+.UrunListeGrup_listeUrunDetayGrup ul li,
+.swiper-container-group-list ul li{ -webkit-flex-shrink: 0;-ms-flex-negative: 0; flex-shrink: 0; width: 150px; height: 100%; position: relative; overflow: hidden; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -o-transition-property: transform; transition-property: transform; transition-property: transform, -webkit-transform; }
+.UrunListeGrup_listeUrunDetayGrup ul li{background: rgba(200, 200, 200, 0.1);}
+.UrunListeGrup_listeUrunDetayGrup li .URN_AD{ position: absolute; bottom:-10px; left:0; padding:3px 10px; z-index: 1; display: block !important; opacity: 0; font-size:12px; transition: all .2s ease; }
+.UrunListeGrup_listeUrunDetayGrup li:hover .URN_AD{ opacity: 1; bottom: 5px; }
+.UrunListeGrup_listeUrunDetayGrup li .URN_RESIM{transition: all .2s ease; transform: translateY(0);}
+.UrunListeGrup_listeUrunDetayGrup li:hover .URN_RESIM{transition: all .2s ease; transform: translateY(-20px);}
+.UrunListeGrup_listeUrunDetayGrup .URN_AD:empty{display:none;}
+
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-prev,
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-next{display: none;}
+
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-prev,
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-next,
+.UrunListeGrup_listeUrunDetayGrup .swiper-pagination-bullet{margin-top:5px !important; background:#f8f8f8;}
+
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-prev .iconx,
+.UrunListeGrup_listeUrunDetayGrup .swiper-button-next .iconx{ width:30px; height:30px; line-height:32px; }
+.UrunListeGrup_listeUrunDetayGrup .swiper-pagination-bullet-active{ background:#000000;}
+
+.UrunListeGrup_listeUrunDetayGrup .swiper-pagination{margin-top: 10px; position: relative;}
+
+.swiper-container-group-list.item-1 .swiper-button-prev,
+.swiper-container-group-list.item-1 .swiper-button-next,
+.swiper-container-group-list.item-2 .swiper-button-prev,
+.swiper-container-group-list.item-2 .swiper-button-next,
+.swiper-container-group-list.item-3 .swiper-button-prev,
+.swiper-container-group-list.item-3 .swiper-button-next,
+.swiper-container-group-list.item-4 .swiper-button-prev,
+.swiper-container-group-list.item-4 .swiper-button-next{ opacity: 0; }
+/*Ürün Detay Grup Ürünler*/
+
+
+/*Media Tag*/
+@media screen and (min-width: 1024px){
+    .UrunListeGrup_listeUrunDetayGrup{
+        margin-top: 80px;
+    }
+    .UrunListeGrup_listeUrunDetayGrup .swiper-button-prev,
+    .UrunListeGrup_listeUrunDetayGrup .swiper-button-next{display: inherit;}
+    .UrunListeGrup_listeUrunDetayGrup .swiper-button-prev{
+        left: -35px;
+    }
+    .UrunListeGrup_listeUrunDetayGrup .swiper-button-next{
+        right: -35px;
+    }
+    .UrunListeGrup_listeUrunDetayGrup .swiper-pagination {
+        display: none;
+    }
+}

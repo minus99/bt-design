@@ -41,12 +41,12 @@
 .jconfirm-closeIcon,
 .btnMinPpCl{
     position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
+    top: 10px !important;
+    right: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
     cursor: pointer;
-    background: url(/images/frontend/close.svg) center center no-repeat #f4f4f4;
+    background: url(/images/frontend/close.svg) center center no-repeat #f4f4f4 !important;
     border-radius: 100%;
     z-index: 1;
 }
@@ -66,7 +66,7 @@
 }
 
 /*CUSTOM POPUP*/
-.popupTitleDefault {
+/*.popupTitleDefault {
     position: sticky;
     top: 0;
     background: $color3;
@@ -75,7 +75,7 @@
     font-weight: 700;
     text-align: left;
     min-height: 60px;
-}
+}*/
 div[class$="icerik"] {
     > span {
         text-align: left;
@@ -135,6 +135,17 @@ label[for$="chkPRM_CHECK"]{
     }
     .chk-padding{
         .font-3{font-size: $fs-15;}
+        .sStylerWrp_checkbox{
+            position: relative;
+            input[type="checkbox"]{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
     }
 }
 .request-form-header{
@@ -146,13 +157,13 @@ label[for$="chkPRM_CHECK"]{
 .request-form-prd{
     .img{
         margin-right: 25px;
-        width: 100px;
+        width: 150px;
     }
     p{
         @extend .mt-10;
     }
     .text{
-        width: calc(100% - 120px);
+        width: calc(100% - 170px);
         font-size: $fs-13;
     }
     .mb-fnt {
@@ -227,6 +238,85 @@ label[for$="chkPRM_CHECK"]{
     left: inherit;
     right: 15px;
     background: #f4f4f4;
+}
+
+.minPpIframe{ position: absolute; top: 0; left: 0;width:100%; height:100%; }
+
+/*Poup Layout*/
+
+.popupDefault { padding:20px 40px; }
+/*Poup Iframe*/
+.minPpIframe form{ height: 100%; }
+/*Poup Title*/
+.popupTitleDefault{ font-size: 22px; font-family:'semi_bold'; margin-bottom: 15px; }
+/*Popup Table Full Width*/
+.popupDefault .tableDefault input[type="text"],
+.popupDefault .tableDefault input[type="password"]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c7c7c7;
+    padding: 5px 10px;
+    line-height: 30px;
+    color:#919191;
+    font-family:'regular';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.popupDefault .tableUyeGiris,
+.popupDefault .tableUyeGiris tr,
+.popupDefault .popupUyeGiris_btnPopupLogin > table{
+    width: 100%;
+}
+
+/*Popup Uye Giris*/
+.popupDefault .tableUyeGiris tr{
+    display: table;
+}
+.popupUyeGiris_btnPopupLogin > table{
+    display: table !important;
+}
+.popupDefault .tableUyeGiris tr.socialConnect,
+.popupDefault .tableUyeGiris tr.trpopupUyeGiris_beniHatirla {
+    display: none;
+}
+.popupDefault .tableUyeGiris tr th > span{
+    display: block;
+    padding-bottom: 10px;
+}
+.popupDefault .tableUyeGiris tr th,
+.popupDefault .tableUyeGiris tr td{
+    font-weight: normal;
+    display: block;
+    text-align: left;
+    font-family:'font';
+    font-size: 14px;
+}
+.popupDefault .tableUyeGiris tr:last-child td{
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 50%;
+    text-align: center;
+}
+.popupDefault a.btnDefault,
+.popupDefault #lnkUyeOlmak,
+.popupDefault #lnkSifremiUnuttum{
+    display: block;
+}
+.popupDefault #lnkUyeOlmak,
+.popupDefault #lnkSifremiUnuttum{
+    padding: 5px;
+    text-decoration: underline;
+}
+a.btnPopupLogin{
+    background: #000;
+    text-align: center;
+    padding:11px 3px;
+    max-width: 145px;
+    margin: 5px 0 10px auto;
+}
+a.btnPopupLogin span{
+    color: #fff;
+    font-size: 12px;
 }
 
 /**/

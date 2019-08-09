@@ -63,3 +63,32 @@
         padding-bottom: 0;
     }
 }
+.swiper-slide, .video-cover{
+    .slide-video,
+    .video-player{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.swiper-slide{
+    .video-player,
+    .mejs__inner,
+    .mejs__mediaelement{
+        height: 100% !important;
+    }
+}
+video{
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.mejs__layers,
+.mejs__controls,
+.mejs__offscreen{
+    @extend .ems-none;
+}

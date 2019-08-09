@@ -1,16 +1,14 @@
 //-------------------------------------------//
 //----- BASE
 //-------------------------------------------//
-
-//@import '_base/reset';
 @import '_base/emos';
 @import '_base/variables';
 @import '_base/mixin';
 @import '_base/animation';
+@import '_base/animation_library';
 @import '_base/keyframes';
 @import '_base/lbf';
 @import '_base/vail';
-
 
 //-------------------------------------------//
 //----- COMPONENT
@@ -22,14 +20,6 @@
 @import '_components/back_buttons_mobile';
 @import '_components/emos_tab_mobile';
 @import '_components/popup';
-
-
-
-//-------------------------------------------//
-//----- LAYOUT
-//-------------------------------------------//
-@import '_main_grid/emos_grid_mobile';
-@import '_main_grid/emos_grid_mobile';
 
 
 //-------------------------------------------//
@@ -50,6 +40,12 @@
 @import '_layout/_footer/menu_mobile';
 @import '_layout/_footer/newsletter-mobile';
 @import '_layout/_footer/social-share-mobile';
+
+
+//-------------------------------------------//
+//----- LAYOUT
+//-------------------------------------------//
+@import '_main_grid/emos_grid_mobile';
 
 
 //-------------------------------------------//
@@ -85,8 +81,6 @@
 @import '_plugins/swiper';
 @import '_swiper_modules/swiper_masonry_mobile';
 
-@import '_base/animation_library';
-
 
 //-------------------------------------------//
 //----- Media Query
@@ -100,22 +94,6 @@
         @import '_base/hidden_element';
         @import '_base/mixin_reset';
         @import '_base/animation_desktop';
-        
-
-        //-------------------------------------------//
-        //----- COMPONENT
-        //-------------------------------------------//
-        @import '_components/emos_buttons_desktop';
-        @import '_components/emos_form_desktop';
-        @import '_components/back_buttons_desktop';
-        @import '_components/navigation_desktop';
-        @import '_components/emos_tab_desktop';
-        @import '_components/popup_desktop';
-
-        //-------------------------------------------//
-        //----- LAYOUT
-        //-------------------------------------------//
-        @import '_main_grid/emos_grid_desktop';
 
 
         //-------------------------------------------//
@@ -135,6 +113,21 @@
         @import '_layout/_footer/menu_desktop';
         @import '_layout/_footer/newsletter-desktop';
         @import '_layout/_footer/social-share-desktop';
+
+        //-------------------------------------------//
+        //----- COMPONENT
+        //-------------------------------------------//
+        @import '_components/emos_buttons_desktop';
+        @import '_components/emos_form_desktop';
+        @import '_components/back_buttons_desktop';
+        @import '_components/navigation_desktop';
+        @import '_components/emos_tab_desktop';
+        @import '_components/popup_desktop';
+
+        //-------------------------------------------//
+        //----- LAYOUT
+        //-------------------------------------------//
+        @import '_main_grid/emos_grid_desktop';
         
 
         //-------------------------------------------//

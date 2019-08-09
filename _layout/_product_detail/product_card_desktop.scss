@@ -12,11 +12,10 @@
     .ga1{
         grid-area: A;
         border-right: 1px solid #efefef;
-        padding-top:250px;
-        padding-bottom:250px;
-        padding-right: 20px;
+        padding-bottom:50px;
+        padding-right:40px;
         .sticky{
-            top: 250px;
+            top: 150px;
             max-width: 470px;
         }
     }

@@ -26,9 +26,7 @@
     backface-visibility: hidden;
 }
 /*Animate Ready*/
-.menu-ready .sub-menu{
-    display: block;
-}
+.menu-ready .sub-menu{ display: block; }
 /*Animate Success*/
 .menu-animate .sub-menu{
     @include setTransform (perspective(1px) scale(1));
@@ -51,3 +49,7 @@
 .bdyTransformAnim{
     @include setTransform (translateX(-450px));
 }
+
+/*Vail Animation*/
+.mini-search-ready .mini-search-overlay { display: block; }
+.mini-search-animate .mini-search-overlay { opacity: .30; }
