@@ -1,6 +1,6 @@
 /*Disbiritorler Form*/
 .form-rdrct{
-    padding-top: 90px;
+    padding-top: 30px;
     padding-bottom: 90px;
     max-width: 580px;
 }
@@ -13,6 +13,10 @@
 .scroll-txt{
     max-height: inherit;
     overflow-y: inherit;
+    .double-el{
+        width: (100% / 3);
+        max-width: (100% / 3);
+    }
 }
 
 /*About US*/
@@ -28,9 +32,7 @@
 }
 .grid-db{
     grid-template-columns:minmax(auto,50%) minmax(20px,110px) minmax(auto,50%);
-    grid-template-areas:
-    "A . B"
-    "A . B";
+    grid-template-areas:"A . B" "A . B";
     background: #f8f8f6;
     align-items: center;
     margin-top: 130px;
@@ -168,13 +170,14 @@
 
 /*Kataloglar*/
 .catalog-lst{
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 40px;
     padding-left: 0;
     padding-right: 0;
     > div{
         flex: 25%;
         width: 25%;
+        max-width: 25%;
         padding: 10px;
         margin-bottom: 30px;
     }

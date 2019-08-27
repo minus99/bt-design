@@ -34,6 +34,10 @@
     font-family:'semi_bold';
     margin-bottom: 20px;
 }
+/*Video*/
+.video-cover-dhb{
+    min-height: 380px;
+}
 /*Slider*/
 .cover-linear{
     &:after{
@@ -87,6 +91,8 @@
         }
     }
     &-ul{
+        width: 100%;
+        display: table;
         padding-top: 50px;
         padding-left: 15px;
         padding-right: 15px;
@@ -97,7 +103,7 @@
             width: 50%;
             margin-bottom: 40px;
             img{
-                max-width: 270px;
+                max-width: 100%;
             }
         }
     }

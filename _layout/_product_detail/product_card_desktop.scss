@@ -101,7 +101,6 @@ span[id$="lbfImgZoomScript"]{
 /*Projects*/
 .detail-projects{
     max-width: 1070px;
-    padding-bottom: 80px;
 }
 .swiper-slide-project{
     padding-left: 0;
@@ -118,11 +117,13 @@ span[id$="lbfImgZoomScript"]{
     padding-left: 0;
     padding-right: 0;
     .swiper-title .ttl{
+        margin-top: 50px;
         margin-bottom: 0;
         font-size: 25px;
     }
     .swiper-slide{
         width: auto;
+        margin-bottom: 50px;
     }
 }
 

@@ -4,7 +4,8 @@
 .page-top-title,
 .pageHeaderSifremiUnuttum,
 .tableTitleUyeIslem,
-.pageHeaderUyeBasarili{
+.pageHeaderUyeBasarili,
+.pageHeaderUyeSifreReset{
     margin-bottom: 35px;
 }
 /*Desktop For Member Grid Max Width*/
@@ -13,12 +14,17 @@
 }
 .ems-page-default,
 .pageSifremiUnuttum,
-.pageUyeIslem{
+.pageUyeIslem,
+.pageUyeSifreReset{
     @extend .mx-mmbr;
 }
 /*Forget Password*/
-.pageSifremiUnuttum{
+.pageSifremiUnuttum,
+.pageUyeSifreReset{
     padding: 0;
+}
+.tableUyeSifreReset{
+    margin-top: 30px;
 }
 .mt-min{
     margin-top: -90px;

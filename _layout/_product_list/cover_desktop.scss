@@ -47,12 +47,16 @@
         &:empty{display: none;}
     }
 }
-.cover-list-list{
+/*.cover-list-list{
     h1,h2{
         position: absolute;
         top: 50%;
         @include setTransform(translateY(-50%));
     }
+}*/
+.cat-p{
+    max-height: 110px;
+    overflow: hidden;
 }
 .cover-list-fmly{
     h1{margin-top: 0; color: $white;}
@@ -60,3 +64,14 @@
 
 /*Ürün liste Sonraki Kategori*/
 .urunliste_sonrakikategori:before{padding-right: 10px;}
+
+//Seo metinleri
+.category-description {
+    padding-top: 0;
+    padding-bottom: 50px;   
+}
+.seo-content{
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}

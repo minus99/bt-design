@@ -1,20 +1,14 @@
-.social-share,
 .mini-search-sub,
 .kutuOzellikFiltre,
 .mini-lang-sub,
 .mini-menu-con,
 .plyc-popup{
     opacity: 0;
-    @include transition(all .2s ease);
+    @include transition(all 222ms cubic-bezier(0.000, 0.000, 0.580, 1.000));
     @include setTransform (perspective(1px) scale(1.1));
     -webkit-transform-origin: center;
     transform-origin: center;
     backface-visibility: hidden;
-}
-/*Alternate Perspective*/
-.social-share{
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
 }
 /*Animate Ready*/
 .menu-ready .mini-menu-con,
@@ -27,13 +21,23 @@
 }
 /*Animate Success*/
 .menu-animate .mini-menu-con,
-.social-animate .social-share,
 .mini-search-animate .mini-search-sub,
 .ems-filter-animate .kutuOzellikFiltre,
 .mini-lang-animate .mini-lang-sub,
 .privacy-popup-animate .plyc-popup{
     @include setTransform (perspective(1px) scale(1));
     opacity: 1;
+}
+
+/*Alternate Perspective*/
+.social-share{
+    @include transition(transform 222ms cubic-bezier(0.000, 0.000, 0.580, 1.000));
+    @include setTransform (perspective(510px) translateX(-510px));
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+.social-animate .social-share{
+    @include setTransform (perspective(510px) translateX(0));
 }
 
 /*Vail Animation*/

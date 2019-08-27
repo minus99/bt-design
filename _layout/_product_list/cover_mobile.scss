@@ -25,13 +25,19 @@
     }
     .txt{
         p{
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 15px;
         }
     }
     .txt-list{
         padding-top: 50px;
     }
+}
+.cat-list-desc{
+    max-width: 440px;
+}
+.cat-p{
+    font-size: 14px;
 }
 .cover-list-list{
     h1,h2{
@@ -40,5 +46,37 @@
         transform: none;
         padding-left: 0;
         padding-right: 0;
+    }
+}
+//Seo metinleri
+.category-description {
+    padding-top: 50px;
+}
+.seo-category-title{
+    font-family: 'bold';
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.seo-open-btn,
+.seo-close-btn{
+    font-family: 'semi_bold';
+}
+.seo-close-btn{
+    margin-top: 20px;
+}
+.seo-content{
+    .seo-full-content, .seo-close-btn{
+        display: none;
+    }
+    &.opened{
+        .seo-open-btn{
+            display: none;
+        }
+        .seo-full-content{
+            display: block;
+        }   
+        .seo-close-btn{
+            display: inline-block;
+        }
     }
 }

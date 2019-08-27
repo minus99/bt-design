@@ -11,7 +11,8 @@
 .page-top-title,
 .pageHeaderSifremiUnuttum,
 .tableTitleUyeIslem,
-.pageHeaderUyeBasarili{
+.pageHeaderUyeBasarili,
+.pageHeaderUyeSifreReset{
     font-size: 22px;
     font-family:'semi_bold';
     padding-bottom: 25px;
@@ -26,10 +27,12 @@
         line-height: 22px;
     }
 }
-.pageSifremiUnuttum{
+.pageSifremiUnuttum,
+.pageUyeSifreReset{
     padding: 20px;
 }
-.tableSifremiUnuttum{
+.tableSifremiUnuttum,
+.tableUyeSifreReset{
     > tbody > tr > th{
         padding-bottom: 10px;
     }
@@ -49,6 +52,27 @@
             text-align: left;
             margin-top: 30px;
         }
+    }
+}
+.tableUyeSifreReset{
+    > tbody > tr{
+        display: block;
+        margin-bottom: 20px;
+    }
+    > tbody > tr > th:empty,
+    > tbody > tr > td:empty{
+        display: none;
+    }
+    > tbody > tr > td{
+        span[id$="lbfDEC_UYESFIRERESET_VLD"]{
+            display: block;
+        }
+    }
+    > tbody > tr:last-child td table{
+        display: table !important;
+        width: 100%;
+        text-align: left;
+        margin-top: 30px;
     }
 }
 /*Left Menu*/

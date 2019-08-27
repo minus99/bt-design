@@ -10,10 +10,13 @@
         height: 85px;
         margin-top: 0;
         > div{
-            width: 250%;
             height: 85px;
             font-size: 70px;
             color: #272727;
+        }
+        > div > div{
+            float: left;
+            width: 50%;
         }
     }
 }
@@ -37,6 +40,9 @@
     .detail *{
         color: $white;
         line-height: 22px;
+        .last{
+            margin-top: 30px;
+        }
     }
 }
 .yr-prf-ul {
@@ -67,13 +73,19 @@
 .hide-more{
     .last{
         display: none;
+        .prf-read-more{
+            display: none;
+        }
     }
     &.opened{
-        .fist{
+        .first .prf-read-more{
             display: none;
         }
         .last{
             display: block;
+            .prf-read-more{
+                display: inline-block;
+            }
         }
     }
 }

@@ -46,6 +46,9 @@
 .news-txt,
 .news-dtl-pa{
     margin-top: 50px;
+    &:empty{
+        display: none;
+    }
 }
 .news-nm{
     font-size:$fs-16;

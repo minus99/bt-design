@@ -125,6 +125,10 @@ span[id$="lbfImgZoomScript"]{
     }
 }
 .UrunListeGrup_listeUrunDetayGrup{
+    &.ems-swiper-active{
+        opacity: 1;
+        visibility: visible;
+    }
     .URN_RESIM{
         cursor: pointer;
         @extend .static;
@@ -191,7 +195,9 @@ span[id$="lbfImgZoomScript"]{
 
 /*Projects*/
 .detail-projects{
-    padding-top: 80px;
+    .swiper-wrapper{
+        &:empty{display: none;}
+    }
 }
 .swiper-slide-project{
     width: 215px;
@@ -263,6 +269,7 @@ span[id$="lbfMDLHEADER_URUNDOKUMAN"]{
     padding-left: 15px;
     padding-right: 15px;
     .swiper-title .ttl{
+        margin-top: 50px;
         margin-bottom: 25px;
         font-size: 18px;
     }
@@ -271,6 +278,7 @@ span[id$="lbfMDLHEADER_URUNDOKUMAN"]{
     }
     .swiper-slide{
         width: 215px;
+        margin-bottom: 20px;
     }
 }
 

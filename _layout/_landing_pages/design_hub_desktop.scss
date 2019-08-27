@@ -102,6 +102,10 @@
     font-size: 45px;
     font-family:'bold';
 }
+/*Video*/
+.video-cover-dhb{
+    min-height: 900px;
+}
 /*Pdotuction*/
 .dhub-production{
     margin-top: 100px;
@@ -189,6 +193,9 @@
         padding-right: 0;
         li{
             width: 33.333%;
+            img{
+                max-width: 270px;
+            }
         }
     }
 }
