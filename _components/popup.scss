@@ -156,13 +156,14 @@ label[for$="chkPRM_CHECK"]{
 .request-form-prd{
     .img{
         margin-right: 25px;
-        width: 150px;
+        width: 100%;
+        max-width: 100px;
     }
     p{
         @extend .mt-10;
     }
     .text{
-        width: calc(100% - 170px);
+        width: calc(100% - 110px);
         font-size: $fs-13;
     }
     .mb-fnt {

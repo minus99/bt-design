@@ -86,6 +86,12 @@ input[type="checkbox"]{display: none;}
 .ems-form{
     .ems-field{
         position: relative;
+        &.ems-form-err{
+            .sStylerWrp_select .sStyler,
+            input{
+                border-color: red;
+            }
+        }
     }    
     .chk-padding{
         padding-top: 15px;

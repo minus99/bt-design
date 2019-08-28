@@ -56,7 +56,11 @@
     background: $color9;
 }
 .request-form-prd{
+    .img{
+        max-width: 140px;
+    }
     .text{
+        width: calc(100% - 150px);
         font-size: $fs-14;
     }
 }
