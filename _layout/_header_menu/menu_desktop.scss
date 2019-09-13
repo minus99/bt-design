@@ -101,15 +101,14 @@
             left: -50px;
         }
         > li{
-            min-width: 50%;
-            display: table-cell;
-            vertical-align: top;
             padding-top: 25px;
             > a{
                 font-family: 'font';
                 font-size: $fs-13;
                 line-height: 22px;
-                display: block;
+                display: inline-block;
+                vertical-align: top;
+                min-width: 50%;
                 span{
                     @include relative;
                     padding-bottom: 1px;
@@ -122,12 +121,14 @@
                         @extend .scaleXHover;
                     }
                 }
-                &.view-all{
-                    margin-top: 25px;
-                    span{
-                        text-decoration: underline;
-                        &:after{display: none;}
-                    }
+            }
+            .view-btn{display: inherit;}
+            a.view-all{
+                margin-top: 25px;
+                display: inline-block;
+                span{
+                    text-decoration: underline;
+                    &:after{display: none;}
                 }
             }
         }

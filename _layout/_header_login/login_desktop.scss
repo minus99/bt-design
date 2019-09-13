@@ -1,4 +1,4 @@
-/*Header mini Login*/
+/*Header mini Login and logoff*/
 .ems-logoff.mini-user-ready{
     .mini-user-logoff{
         display: block;
@@ -15,7 +15,21 @@
         display: block;
     }
 }
-
+//Login
+.mini-user-logon{
+    transform-origin: right top;
+    transition: all .12s cubic-bezier(0.55,0.055,0.675,0.19);
+    transform: scale(0.8,0.4);
+    opacity: 0;
+}
+.ems-login.mini-user-animate{
+    .mini-user-logon{
+        transition: all .3s cubic-bezier(0.215,0.61,0.355,1);
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+//Logoff
 .mini-user-logoff{
     @extend .transformX;
 }

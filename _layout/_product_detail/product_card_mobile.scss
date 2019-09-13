@@ -25,6 +25,9 @@ span[id$="lbfImgZoomScript"]{
     a.cloud-zoom{
         @extend .blck;
     }
+    .gallery-full-loaded{
+        display: none;
+    }
 }
 .urunDetay{
     .ga1{

@@ -91,3 +91,31 @@
         font-size: 22px;
     }
 }
+.ems-doc-download-result {
+    &.no-result{
+        .search-result{
+            &:empty{
+                &:before{
+                    content:'Aradığınız ürün bulunamadı!';
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 50px;
+                };
+            }
+        }
+    }
+}
+.en-US{
+    .ems-doc-download-result {
+        &.no-result{
+            .search-result{
+                &:empty{
+                    &:before{
+                        content:'No products found!';
+                    };
+                }
+            }
+        }
+    }
+}

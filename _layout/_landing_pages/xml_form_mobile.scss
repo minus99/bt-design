@@ -43,3 +43,33 @@
         @extend .mt-20;
     }
 }
+
+//Kariyer formu
+.career-from,
+.contact-from{
+    input[type="file"]{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+.flx-el-file{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .fileUploadBtn{
+        background: #000;
+        color: white;
+        font-size: 12px;
+        padding: 5px 15px;
+        height: 48px;
+        line-height: 40px;
+    }
+    span.fileUploadSrc{
+        padding: 5px 15px;
+        display: inline-block;
+        &:empty{display: none;}
+    }
+}

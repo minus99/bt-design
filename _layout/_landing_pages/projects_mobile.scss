@@ -245,3 +245,32 @@
         }
     }
 }
+//Projeler detay alt slider
+.ems-page-projects{
+    .detail-gallery{
+        .mb-bttm-wrp {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            margin: 0 auto;
+        }
+        .swiper-pagination{
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            &-bullet{
+                margin-top: 0;
+                display: inline-block;
+                vertical-align: middle;
+                width: 5px;
+                height: 5px;
+                &:not(:first-child){
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

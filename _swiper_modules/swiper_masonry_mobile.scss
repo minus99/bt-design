@@ -55,6 +55,9 @@
                 color: $white;
             }
         }
+        .font-7{
+            font-size: 30px;
+        }
     }
     .dbl-el{
         span{
@@ -83,6 +86,15 @@
     .swiper-slide{
         width: 50%;
     }
+    .swiper-pagination{
+        position: relative;
+        &-bullet{
+            background: #f8f8f8;
+        }
+        &-bullet-active{
+            background: #000000;
+        }
+    }
 }
 
 /*Ana Sayfa 3 Grid*/
@@ -108,5 +120,20 @@
             width: auto;
             text-align: center;
         }
+    }
+    .ems-prd-image{
+        position: relative;
+        padding-top: calc((279 / 300) * 100%);
+        > a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &.item-1{
+        .swiper-button-prev,
+        .swiper-button-next {display: none;}
     }
 }

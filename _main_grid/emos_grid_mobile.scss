@@ -72,6 +72,9 @@
         width: 100%;
         height: 100%;
     }
+    .slide-video{
+        pointer-events: none;
+    }
 }
 .swiper-slide{
     .video-player,

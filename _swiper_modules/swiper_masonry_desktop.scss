@@ -1,5 +1,4 @@
 /* Masonry Type Grid */
-
 .swiper-grid-title{
     padding-top:8%;
     padding-bottom: 8%;
@@ -123,7 +122,7 @@
     }
     .swiper-slide{
         width: auto;
-        .link-btn img{max-width: 30px;}
+        .link-btn img{max-width: 55px;}
     }
     .type-1{
         grid-area: A;
@@ -169,7 +168,6 @@
         height: auto;
     }
 }
-
 .swiper-db-vertical{
     .swiper-wrapper{
         grid-column-gap:50px;
@@ -210,7 +208,6 @@
         grid-column-gap:30px;
     }
 }
-
 /* Projects Brand Slider*/
 .swiper-container-brand{
     .d-wrap{
@@ -225,4 +222,12 @@
 /*categories Slider*/
 .swiper-container-catg{
     margin-top: 100px;
+}
+/*Swiper hover reset*/
+.swiper-container{
+    .ems-prd:hover{
+        .ems-prd-inner{
+            margin-bottom: 0;
+        }
+    }
 }

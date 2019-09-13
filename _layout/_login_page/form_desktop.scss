@@ -39,7 +39,6 @@
         margin-top: 35px;
     }
 }
-
 .ems-logoff{
     .db-menu-flx{
         grid-template-columns: minmax(auto, 0) minmax(0, auto);
@@ -51,4 +50,7 @@
         border-left: none;
         padding-left: 0;
     }
+}
+div[id$="plhUyelikMeslek"]{
+    max-width: 350px;
 }

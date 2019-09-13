@@ -176,6 +176,28 @@
         }
     }
 }
+
+//Projeler detay alt slider
+.ems-page-projects{
+    .detail-gallery{
+        .mb-bttm-wrp {
+            width: calc(100% - 10%);
+            bottom: 30px;
+        }
+        .swiper-pagination{
+            margin-left: 0;
+            margin-right: auto;
+            &-bullet{
+                width: 8px;
+                height: 8px;
+                &:not(:first-child){
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
 .ems-prd-list-title{ 
     font-size: $fs-22;
     text-align: center;
@@ -183,7 +205,6 @@
         text-align: left;
     }
 }
-
 /*Show More*/
 .icerikBlogListe_dahaFazla{
     a.btnDahaFazla:hover{

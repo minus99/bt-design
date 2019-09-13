@@ -88,7 +88,8 @@ input[type="checkbox"]{display: none;}
         position: relative;
         &.ems-form-err{
             .sStylerWrp_select .sStyler,
-            input{
+            input,
+            textarea{
                 border-color: red;
             }
         }

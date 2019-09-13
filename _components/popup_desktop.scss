@@ -32,7 +32,6 @@
 /*Product Request Form*/
 .ems-custom-form,
 .ems-price-quate{
-    
     .jconfirm-box-container{
         max-width: 1330px !important;
         margin-top: 85px;
@@ -42,6 +41,9 @@
         max-height: 840px !important;
         overflow-y: inherit;
     }
+}
+.fav-group-popup{
+    .jconfirm-content-pane{height:580px !important; } 
 }
 .request-from{
     .chk-padding{

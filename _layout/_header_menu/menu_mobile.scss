@@ -58,7 +58,7 @@
     }
     ul.lvl-3{
         > li{
-            > a{
+            > a, .view-btn{
                 display: none;
             }
         }

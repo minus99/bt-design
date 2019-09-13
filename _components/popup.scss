@@ -122,7 +122,8 @@ label[for$="chkPRM_CHECK"]{
 /*Product Request Form*/
 
 .ems-custom-form,
-.ems-price-quate{
+.ems-price-quate,
+.fav-group-popup{
     .jconfirm-box-container{width: 100% !important;}
     .jconfirm-box{margin-top: 0 !important;}
     .jconfirm-content-pane{height: 100vh!important;} 
@@ -178,7 +179,6 @@ label[for$="chkPRM_CHECK"]{
 .fav-group-popup {
     .minPpIframe{
         padding: 20px !important;
-        overflow-y: auto;
     }
     .jconfirm-box{
         margin-top: 0 !important;
