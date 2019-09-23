@@ -316,7 +316,80 @@ a.btnPopupLogin span{
     color: #fff;
     font-size: 12px;
 }
+/*Country Select*/
+.fixed-country{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: url('/UPLOAD/country-select-bg.jpg') center center no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    .logo,
+    .fixed-country-select{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{ 
+        top: 0;
+        img{
+            max-width: 114px;
+        }
+    }
+    .fixed-country-select,
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixed-country-select{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.80);
+        bottom:0;
+        min-height: 100px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .flex{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .bx{
+        > a{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+            span{
+                padding-top: 3px;
+            }
+        }
+        &:first-child{
+            img{
+                max-width: 15px;
+            }
+        }
+        &:last-child{
+            img{
+                max-width: 23px;
+            }
+        }
+    }
+}
+.ems-lang-popup{
+    .fixed-country{display: block;}
+}
 
-/**/
+/*Overlay*/
 .social-overlay,
 .form-overlay{z-index: 40;}

@@ -8,14 +8,14 @@
 }
 .olNavigasyon{
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     .iconx{vertical-align: middle;}
     li{
         @extend .db-bck;
         a{
             display: block;
-            padding:7px 10px 2px 10px;
+            padding:7px 7px 2px 7px;
             font-size: $fs-13;
         }
         &.navigasyonSeviye1{
@@ -37,5 +37,16 @@
         vertical-align: middle;
         padding-top: 4px;
         padding-bottom: 2px;
+    }
+}
+//Icerik nav son seviye kontrol
+.icerikNavigasyon{
+    .olNavigasyon{
+        .iconx:nth-child(6){
+            display: none;
+        }
+        .navigasyonSeviye4{
+            display: none;
+        }
     }
 }

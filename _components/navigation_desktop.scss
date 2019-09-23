@@ -5,3 +5,14 @@
 .urunNavigasyon{
     margin-top: 0;
 }
+//Icerik nav son seviye kontrol
+.icerikNavigasyon{
+    .olNavigasyon{
+        .iconx:nth-child(6){
+            display: inline-block;
+        }
+        .navigasyonSeviye4{
+            display: inline-block;
+        }
+    }
+}
