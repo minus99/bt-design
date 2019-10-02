@@ -114,13 +114,15 @@
 }
 
 /* Projects Brand Slider*/
-.swiper-container{
-    .d-wrap{
-        li{
-            width: auto;
+.swiper-container-brand{
+    .swiper-wrapper{
+        li{ 
+            width: 33.333%;
             text-align: center;
         }
     }
+}
+.swiper-container{
     .ems-prd-image{
         position: relative;
         padding-top: calc((279 / 300) * 100%);

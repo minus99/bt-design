@@ -93,6 +93,12 @@ input[type="checkbox"]{display: none;}
                 border-color: red;
             }
         }
+        &.frm-keyup{
+            input,
+            textarea{
+                color: #000000;
+            }
+        }
     }    
     .chk-padding{
         padding-top: 15px;

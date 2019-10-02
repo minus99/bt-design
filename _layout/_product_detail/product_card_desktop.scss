@@ -94,8 +94,10 @@ span[id$="lbfImgZoomScript"]{
 .ems-page-product-detail .emos_H1{
     font-size: 45px;
 }
-.ems-prdd-sortname{
-    font-size: 30px;
+.fxd-name-wrp{
+    .ems-prdd-sortname{
+        font-size: 30px;
+    }
 }
 .ems-prdd-block1{
     flex-wrap: wrap;
