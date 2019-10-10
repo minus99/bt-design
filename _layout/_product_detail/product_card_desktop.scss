@@ -38,7 +38,8 @@ span[id$="lbfImgZoomScript"]{
 }
 
 /*Gallery*/
-.ems-prdd-gallery{
+.ems-prdd-gallery{ 
+    margin-top: 0;
     padding-bottom: 30px;
     .slide-wrp{
         @include grid;
@@ -93,11 +94,13 @@ span[id$="lbfImgZoomScript"]{
 /*Product Card*/
 .ems-page-product-detail .emos_H1{
     font-size: 45px;
+    max-width: calc(100% - 120px);
+    line-height: 1;
 }
 .fxd-name-wrp{
     .ems-prdd-sortname{
         font-size: 30px;
-    }
+    } 
 }
 .ems-prdd-block1{
     flex-wrap: wrap;

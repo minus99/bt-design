@@ -17,6 +17,7 @@ span[id$="lbfImgZoomScript"]{
     @extend .m-left;
 }
 .ems-prdd-gallery{
+    margin-top: 30px;
     .swiper-slide{
         background:rgba(200, 200, 200, 0.1);
         margin-right: 10px;
@@ -109,6 +110,7 @@ span[id$="lbfImgZoomScript"]{
     }
     p{
         font-size: $fs-15;
+        margin-bottom: 10px;
     }
 }
 .ems-prdd-srts{
