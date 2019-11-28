@@ -45,9 +45,6 @@
     .swiper-inner{
         overflow: visible;
     }
-    .swiper-slide {
-        width: 90%;
-    }
     .swiper-pagination{
         position: inherit;
         display: none;
@@ -124,4 +121,92 @@
 }
 
 /*Urun Detay Zoom*/
-.zoom-gallery{display: none;}
+.zoom-gallery{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .zoom-gallery-inner{
+        height: 100%;
+        padding:5px 10px;
+    }
+    span.title{
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 22px;
+    }
+    .thumbs-wrapper,
+    .swiper-inner{
+        overflow: visible;
+    }
+    .thumbs-wrapper{
+        display: none;
+        .swiper-slide {
+            > span{
+                display: block;
+                transform: scale(0.5);
+                transition: transform .2s ease;
+            }
+        }
+        .swiper-slide-active {
+            > span{
+                transform: scale(1);
+            }
+        }
+    }
+    .large-wrapper{
+        .swiper-button-prev,
+        .swiper-button-next{
+            background: none;
+            border-radius: 0;
+        }
+        .swiper-button-prev{
+            left: 0;
+        }
+        .swiper-button-next{
+            right: 0;
+        }
+        .icon-arrow-left,
+        .icon-arrow-right{
+            &:before,
+            &:before{
+                font-size: 30px;
+            }
+        }
+        .swiper-pagination{
+            top: 15px;
+        }
+    }
+    a.close-btn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        i{
+            &:before{
+                font-size: 40px;
+            }
+        }
+    }
+}
+.zoom-gallery-ready{
+    overflow: hidden;
+}
+.zoom-gallery-animate{
+    .zoom-gallery{
+        display: block;
+    }
+}

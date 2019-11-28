@@ -42,20 +42,34 @@
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 100px;
+    .swiper-slide{width: 85%;}
     .swiper-pagination{display: inherit;}
 }
 .mod-bnr-cls{
     top: 20px;
     right: 20px;       
 }
+
+/*Urun Detay Zoom*/
+.zoom-gallery{
+    .zoom-gallery-inner{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    a.close-btn{
+        top: 30px;
+        right: 5%;
+    }
+}
+
 /*Desktop Animate*/
 .mod-popup-ready{
-    .mod-bnr-op{
+    .active-content .mod-bnr-op{
         display: block;
     }
 }
 .mod-popup-animate{
-    .mod-bnr-op{
+    .active-content .mod-bnr-op{
         transform: translateY(-50%) scale(1);
     }
 }
